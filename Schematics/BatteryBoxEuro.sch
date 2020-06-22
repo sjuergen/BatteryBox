@@ -300,10 +300,10 @@ $EndComp
 Text Notes 8300 4650 0    50   ~ 0
 12V Zigarettenanzünder\n- 1m Kabel -
 $Comp
-L Connector:Conn_WallSocket X?
+L Connector:Conn_WallSocket X1
 U 1 1 5EC190DC
 P 1500 6950
-F 0 "X?" V 1456 6762 50  0000 R CNN
+F 0 "X1" V 1456 6762 50  0000 R CNN
 F 1 "X3" V 1411 6762 50  0001 R CNN
 F 2 "" H 1100 6950 50  0001 C CNN
 F 3 "~" H 1100 6950 50  0001 C CNN
@@ -345,10 +345,10 @@ Wire Wire Line
 Wire Wire Line
 	3900 4500 3900 7700
 $Comp
-L MyParts:230V_KfzCharger U?
+L MyParts:230V_KfzCharger U6
 U 1 1 5EC5CF8F
 P 9150 750
-F 0 "U?" H 9350 815 50  0000 C CNN
+F 0 "U6" H 9350 815 50  0000 C CNN
 F 1 "230V_KfzCharger" H 9350 724 50  0000 C CNN
 F 2 "" H 9150 750 50  0001 C CNN
 F 3 "" H 9150 750 50  0001 C CNN
@@ -398,10 +398,10 @@ Wire Notes Line
 Wire Notes Line
 	7800 2200 7800 600 
 $Comp
-L Connector:Conn_WallPlug_Earth P?
+L Connector:Conn_WallPlug_Earth P1
 U 1 1 5ECE1CC2
 P 8000 1350
-F 0 "P?" H 8067 1675 50  0000 C CNN
+F 0 "P1" H 8067 1675 50  0000 C CNN
 F 1 "Conn_WallPlug_Earth" H 8067 1584 50  0000 C CNN
 F 2 "" H 8400 1350 50  0001 C CNN
 F 3 "~" H 8400 1350 50  0001 C CNN
@@ -421,10 +421,10 @@ Wire Wire Line
 Wire Wire Line
 	8400 1700 8650 1700
 $Comp
-L MyParts:JD2912-1Z-12VDC_40A K?
+L MyParts:JD2912-1Z-12VDC_40A K1
 U 1 1 5EF13C07
 P 3500 4000
-F 0 "K?" H 3930 4046 50  0000 L CNN
+F 0 "K1" H 3930 4046 50  0000 L CNN
 F 1 "JD2912-1Z-12VDC_40A" H 3930 3955 50  0000 L CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3950 3950 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3500 4000 50  0001 C CNN
