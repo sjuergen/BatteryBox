@@ -1,0 +1,40 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Conn_01x01_Male
+#
+DEF Connector_Conn_01x01_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x01_Male" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*
+$ENDFPLIST
+DRAW
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_WallSocket
+#
+DEF Connector_Conn_WallSocket J 0 0 Y Y 1 F N
+F0 "J" 50 175 50 H V C BNN
+F1 "Connector_Conn_WallSocket" 200 0 50 V V C BNN
+F2 "" -400 0 50 H I C CNN
+F3 "" -400 0 50 H I C CNN
+DRAW
+A 125 0 150 901 -901 0 1 10 f 125 150 125 -150
+S 125 -110 60 -90 0 1 0 N
+S 125 90 60 110 0 1 0 N
+P 2 0 1 0 60 -100 -100 -100 N
+P 2 0 1 0 60 100 -100 100 N
+P 2 0 1 10 125 -150 125 150 N
+X AC_P 1 -200 100 200 R 50 50 1 1 W
+X AC_N 2 -200 -100 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
