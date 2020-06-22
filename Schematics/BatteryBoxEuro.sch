@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title "BatteryBox 400x300 Euro"
+Title ""
 Date ""
 Rev ""
 Comp ""
@@ -36,42 +36,92 @@ F 3 "~" V 9600 4310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Device:Battery BT1
+U 1 1 5E8737E8
+P 1450 4900
+F 0 "BT1" H 1558 4946 50  0000 L CNN
+F 1 "12V" H 1558 4855 50  0000 L CNN
+F 2 "" V 1450 4960 50  0001 C CNN
+F 3 "~" V 1450 4960 50  0001 C CNN
+	1    1450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
 L MyParts:DPlusSimulator U4
 U 1 1 5E87470E
-P 1150 3100
-F 0 "U4" H 2028 3171 50  0000 L CNN
-F 1 "DPlusSimulator" H 2028 3080 50  0000 L CNN
-F 2 "" H 900 3600 50  0001 C CNN
-F 3 "" H 900 3600 50  0001 C CNN
-	1    1150 3100
+P 2250 2700
+F 0 "U4" H 3128 2771 50  0000 L CNN
+F 1 "DPlusSimulator" H 3128 2680 50  0000 L CNN
+F 2 "" H 2000 3200 50  0001 C CNN
+F 3 "" H 2000 3200 50  0001 C CNN
+	1    2250 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L MyParts:Pulser U5
 U 1 1 5E879508
-P 9250 4600
-F 0 "U5" V 9204 4678 50  0000 L CNN
-F 1 "Pulser" V 9295 4678 50  0000 L CNN
-F 2 "" H 9250 4600 50  0001 C CNN
-F 3 "" H 9250 4600 50  0001 C CNN
-	1    9250 4600
+P 10400 4300
+F 0 "U5" V 10354 4378 50  0000 L CNN
+F 1 "Pulser" V 10445 4378 50  0000 L CNN
+F 2 "" H 10400 4300 50  0001 C CNN
+F 3 "" H 10400 4300 50  0001 C CNN
+	1    10400 4300
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	1450 2000 1450 3450
 $Comp
 L MyParts:F_Distributor U2
 U 1 1 5E8A7CC8
-P 7350 2800
-F 0 "U2" H 7350 1977 50  0000 C CNN
-F 1 "F_Distributor" H 7350 1886 50  0000 C CNN
-F 2 "" H 7350 2800 50  0001 C CNN
-F 3 "" H 7350 2800 50  0001 C CNN
-	1    7350 2800
+P 8500 2800
+F 0 "U2" H 8500 1977 50  0000 C CNN
+F 1 "F_Distributor" H 8500 1886 50  0000 C CNN
+F 2 "" H 8500 2800 50  0001 C CNN
+F 3 "" H 8500 2800 50  0001 C CNN
+	1    8500 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9600 2550 9600 2350
 Wire Wire Line
 	9600 2850 9600 3250
+Wire Wire Line
+	3200 2600 3300 2600
+Wire Wire Line
+	1450 2000 2350 2000
+Wire Wire Line
+	1450 3450 3800 3450
+Connection ~ 1450 3450
+Wire Wire Line
+	1450 3450 1450 4700
+$Comp
+L MyParts:PB12V-Charger U3
+U 1 1 5E8B48DF
+P 5350 3850
+F 0 "U3" H 5550 3950 50  0000 C CNN
+F 1 "PB12V-Charger" H 5550 3850 50  0000 C CNN
+F 2 "" H 5350 3850 50  0001 C CNN
+F 3 "" H 5350 3850 50  0001 C CNN
+	1    5350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyParts:Terminal16 U1
+U 1 1 5E8CE450
+P 4750 6550
+F 0 "U1" H 5178 6596 50  0000 L CNN
+F 1 "Terminal16" H 5178 6505 50  0000 L CNN
+F 2 "" H 4800 6600 50  0001 C CNN
+F 3 "" H 4800 6600 50  0001 C CNN
+	1    4750 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 7000 4300 7500
+Wire Wire Line
+	1450 5100 1450 5900
+Wire Wire Line
+	2350 3350 2350 5750
 $Comp
 L Switch:SW_DPST_x2 S1
 U 1 1 5E8E5E5B
@@ -84,37 +134,115 @@ F 3 "~" H 9600 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5E8F0E10
+P 4500 4400
+F 0 "J1" H 4528 4376 50  0000 L CNN
+F 1 " " H 4528 4285 50  0000 L CNN
+F 2 "" H 4500 4400 50  0001 C CNN
+F 3 "~" H 4500 4400 50  0001 C CNN
+	1    4500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5E8F155C
+P 4500 4400
+F 0 "J2" H 4608 4581 50  0000 C CNN
+F 1 " " H 4608 4490 50  0000 C CNN
+F 2 "" H 4500 4400 50  0001 C CNN
+F 3 "~" H 4500 4400 50  0001 C CNN
+	1    4500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4400 4700 4150
+Wire Wire Line
+	4700 4150 4850 4150
+Wire Wire Line
+	4700 4500 4700 4800
+Wire Wire Line
+	4700 4800 4850 4800
+Wire Wire Line
+	4300 7500 6550 7500
+Wire Wire Line
+	6550 7500 6550 5800
+Wire Wire Line
+	6550 5800 9600 5800
+Wire Wire Line
+	4800 6100 4800 5750
+Wire Wire Line
+	4800 5750 2350 5750
+Wire Wire Line
+	4900 6100 4900 5600
+Wire Wire Line
+	4900 5600 3300 5600
+Wire Wire Line
+	4700 6100 4700 5900
+Wire Wire Line
+	4700 5900 1450 5900
+Wire Wire Line
+	4400 7000 4400 7600
+Wire Wire Line
+	4400 7600 6700 7600
+Wire Wire Line
+	6700 7600 6700 5950
+Wire Wire Line
+	6700 5950 10300 5950
+Wire Wire Line
+	10300 4900 10300 5950
+Wire Wire Line
+	4900 7700 4900 7000
+Wire Wire Line
+	4500 7400 6400 7400
+Wire Wire Line
+	4500 7000 4500 7400
+Wire Wire Line
+	7950 3000 6900 3000
+$Comp
 L Connector:Conn_WallSocket X3
 U 1 1 5EBD0381
-P 6950 4350
-F 0 "X3" V 6906 4162 50  0000 R CNN
-F 1 "X3" V 6861 4162 50  0001 R CNN
-F 2 "" H 6550 4350 50  0001 C CNN
-F 3 "~" H 6550 4350 50  0001 C CNN
-	1    6950 4350
-	-1   0    0    -1  
-$EndComp
-Wire Notes Line
-	8100 4900 6750 4900
-Wire Notes Line
-	6750 4050 6750 4900
-Wire Notes Line
-	6750 4050 8100 4050
-Wire Notes Line
-	8100 4900 8100 4050
-$Comp
-L Device:Fuse F2
-U 1 1 5EBE1E9A
-P 7550 4250
-F 0 "F2" H 7610 4296 50  0000 L CNN
-F 1 "10A" H 7610 4205 50  0000 L CNN
-F 2 "" V 7480 4250 50  0001 C CNN
-F 3 "~" H 7550 4250 50  0001 C CNN
-	1    7550 4250
+P 8000 4300
+F 0 "X3" V 7956 4112 50  0000 R CNN
+F 1 "X3" V 7911 4112 50  0001 R CNN
+F 2 "" H 7600 4300 50  0001 C CNN
+F 3 "~" H 7600 4300 50  0001 C CNN
+	1    8000 4300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7350 4450 7150 4450
+	4500 6100 4500 5400
+Wire Wire Line
+	4600 6100 4600 5400
+Wire Wire Line
+	8100 5400 8100 4950
+Wire Wire Line
+	7900 4500 7900 4800
+Wire Wire Line
+	7900 4800 7600 4800
+Wire Wire Line
+	7600 4800 7600 3400
+Wire Notes Line
+	9100 4950 7750 4950
+Wire Notes Line
+	7750 4100 7750 4950
+Wire Notes Line
+	7750 4100 9100 4100
+Wire Notes Line
+	9100 4950 9100 4100
+$Comp
+L Device:Fuse F2
+U 1 1 5EBE1E9A
+P 8100 4800
+F 0 "F2" H 8160 4846 50  0000 L CNN
+F 1 "10A" H 8160 4755 50  0000 L CNN
+F 2 "" V 8030 4800 50  0001 C CNN
+F 3 "~" H 8100 4800 50  0001 C CNN
+	1    8100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4650 8100 4500
 Wire Notes Line
 	9400 3100 10100 3100
 Wire Notes Line
@@ -123,13 +251,104 @@ Wire Notes Line
 	10100 3800 9400 3800
 Wire Notes Line
 	9400 3800 9400 3100
-Text Notes 7300 4600 0    50   ~ 0
+Wire Notes Line
+	6550 3800 4600 3800
+Wire Wire Line
+	6800 4450 6900 4450
+Wire Wire Line
+	6900 3000 6900 4450
+Wire Wire Line
+	6250 4150 6400 4150
+Wire Wire Line
+	6400 4150 6400 4450
+Wire Wire Line
+	7600 3400 7950 3400
+Wire Wire Line
+	4600 5400 8100 5400
+Wire Wire Line
+	6400 5550 6800 5550
+Wire Wire Line
+	6800 5550 6800 4550
+Wire Wire Line
+	6400 5550 6400 7400
+Wire Wire Line
+	6400 4550 6400 4800
+Wire Wire Line
+	6400 4800 6250 4800
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5EC36685
+P 6600 4450
+F 0 "J3" H 6708 4631 50  0000 C CNN
+F 1 " " H 6708 4540 50  0000 C CNN
+F 2 "" H 6600 4450 50  0001 C CNN
+F 3 "~" H 6600 4450 50  0001 C CNN
+	1    6600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 5EC3704C
+P 6600 4450
+F 0 "J4" H 6628 4426 50  0000 L CNN
+F 1 " " H 6628 4335 50  0000 L CNN
+F 2 "" H 6600 4450 50  0001 C CNN
+F 3 "~" H 6600 4450 50  0001 C CNN
+	1    6600 4450
+	1    0    0    -1  
+$EndComp
+Text Notes 8300 4650 0    50   ~ 0
 12V Zigarettenanzünder\n- 1m Kabel -
 $Comp
-L MyParts:230V_KfzCharger U6
+L Connector:Conn_WallSocket X?
+U 1 1 5EC190DC
+P 1500 6950
+F 0 "X?" V 1456 6762 50  0000 R CNN
+F 1 "X3" V 1411 6762 50  0001 R CNN
+F 2 "" H 1100 6950 50  0001 C CNN
+F 3 "~" H 1100 6950 50  0001 C CNN
+	1    1500 6950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 4400 4300 4400
+Wire Wire Line
+	3700 7050 1700 7050
+Wire Wire Line
+	1700 6850 3200 6850
+Wire Wire Line
+	3200 6850 3200 7300
+Wire Wire Line
+	3200 7300 4600 7300
+Wire Wire Line
+	4600 7300 4600 7000
+Wire Notes Line
+	1100 6550 1900 6550
+Wire Notes Line
+	1900 6550 1900 7350
+Wire Notes Line
+	1900 7350 1100 7350
+Wire Notes Line
+	1100 7350 1100 6550
+Text Notes 1150 6500 0    50   ~ 0
+12V Kfz switched 
+Wire Notes Line
+	4600 3800 4600 5150
+Wire Notes Line
+	6550 3800 6550 5150
+Wire Wire Line
+	3700 4400 3700 7050
+Wire Wire Line
+	3900 7700 4900 7700
+Wire Wire Line
+	3900 4500 4300 4500
+Wire Wire Line
+	3900 4500 3900 7700
+$Comp
+L MyParts:230V_KfzCharger U?
 U 1 1 5EC5CF8F
 P 9150 750
-F 0 "U6" H 9350 815 50  0000 C CNN
+F 0 "U?" H 9350 815 50  0000 C CNN
 F 1 "230V_KfzCharger" H 9350 724 50  0000 C CNN
 F 2 "" H 9150 750 50  0001 C CNN
 F 3 "" H 9150 750 50  0001 C CNN
@@ -137,11 +356,35 @@ F 3 "" H 9150 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
+	9600 4450 9600 5800
+Wire Wire Line
 	9600 4050 9600 3650
+Wire Wire Line
+	8500 2350 8500 2600
 Wire Wire Line
 	9600 2350 10300 2350
 Wire Wire Line
+	10300 2350 10300 3700
+Wire Notes Line
+	4600 5150 6550 5150
+Wire Wire Line
+	4500 5400 4150 5400
+Wire Wire Line
+	8500 2350 9600 2350
+Connection ~ 9600 2350
+Wire Wire Line
 	10050 1050 10300 1050
+Wire Wire Line
+	10300 1050 10300 2350
+Connection ~ 10300 2350
+Wire Wire Line
+	5000 7000 5000 7250
+Wire Wire Line
+	5000 7250 6250 7250
+Wire Wire Line
+	6250 7250 6250 5650
+Wire Wire Line
+	6250 5650 10850 5650
 Wire Wire Line
 	10850 5650 10850 1700
 Wire Wire Line
@@ -154,6 +397,17 @@ Wire Notes Line
 	10500 2200 7800 2200
 Wire Notes Line
 	7800 2200 7800 600 
+$Comp
+L Connector:Conn_WallPlug_Earth P?
+U 1 1 5ECE1CC2
+P 8000 1350
+F 0 "P?" H 8067 1675 50  0000 C CNN
+F 1 "Conn_WallPlug_Earth" H 8067 1584 50  0000 C CNN
+F 2 "" H 8400 1350 50  0001 C CNN
+F 3 "~" H 8400 1350 50  0001 C CNN
+	1    8000 1350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	8300 1250 8400 1250
 Wire Wire Line
@@ -167,211 +421,38 @@ Wire Wire Line
 Wire Wire Line
 	8400 1700 8650 1700
 $Comp
-L MyParts:JD2912-1Z-12VDC_40A K1
+L MyParts:JD2912-1Z-12VDC_40A K?
 U 1 1 5EF13C07
-P 2500 4000
-F 0 "K1" H 2930 4046 50  0000 L CNN
-F 1 "JD2912-1Z-12VDC_40A" H 2930 3955 50  0000 L CNN
-F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2950 3950 50  0001 L CNN
-F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 2500 4000 50  0001 C CNN
-	1    2500 4000
-	1    0    0    -1  
-$EndComp
-Text HLabel 4550 1350 1    50   Input ~ 0
-OUT1_12V
-Text HLabel 4350 1350 1    50   Input ~ 0
-OUT1_GND
-Wire Wire Line
-	4650 3200 6800 3200
-$Comp
-L NAC3MPA-1-WOT:NAC3MPA-1-WOT U3
-U 1 1 5EF1E21B
-P 4250 1450
-F 0 "U3" V 4011 2080 50  0000 L CNN
-F 1 "NAC3MPA-1-WOT" V 4102 2080 50  0000 L CNN
-F 2 "NAC3MPA-1-WOT" H 4250 1450 50  0001 L BNN
-F 3 "" H 4250 1450 50  0001 C CNN
-	1    4250 1450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4650 3200 4650 1650
-$Comp
-L Connector:Conn_WallPlug P1
-U 1 1 5EF29B60
-P 8100 1350
-F 0 "P1" H 8117 1675 50  0000 C CNN
-F 1 "Conn_WallPlug" H 8117 1584 50  0000 C CNN
-F 2 "" H 8500 1350 50  0001 C CNN
-F 3 "~" H 8500 1350 50  0001 C CNN
-	1    8100 1350
+P 3500 4000
+F 0 "K?" H 3930 4046 50  0000 L CNN
+F 1 "JD2912-1Z-12VDC_40A" H 3930 3955 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3950 3950 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3500 4000 50  0001 C CNN
+	1    3500 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 4400 3100 2500
+	3700 4300 3700 4400
+Connection ~ 3700 4400
 Wire Wire Line
-	7350 2500 7350 2600
-Connection ~ 9600 2350
+	3300 4300 3300 5600
 Wire Wire Line
-	2600 3700 2600 2350
+	3300 2600 3300 3700
 Wire Wire Line
-	2700 4300 2700 4400
+	3800 3450 3800 3700
 Wire Wire Line
-	2700 4400 3100 4400
+	8500 2350 3600 2350
 Wire Wire Line
-	2300 5750 2300 4300
-Wire Wire Line
-	2200 2750 2300 2750
-Wire Wire Line
-	2600 2350 9150 2350
-Wire Wire Line
-	2800 2000 2800 3700
-$Comp
-L MyParts:12VKfz_Plug X2
-U 1 1 5EF8167C
-P 1050 1300
-F 0 "X2" V 1206 1278 50  0000 L CNN
-F 1 "12VKfz_Plug" V 1115 1278 50  0000 L CNN
-F 2 "" H 1050 1300 50  0001 C CNN
-F 3 "" H 1050 1300 50  0001 C CNN
-	1    1050 1300
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	750  1750 800  5950
-Wire Wire Line
-	900  2000 900  1750
-Wire Wire Line
-	900  2000 2800 2000
-Wire Wire Line
-	1050 2550 900  2550
-Connection ~ 900  2000
-Wire Wire Line
-	950  2950 1050 2950
-Wire Wire Line
-	900  2550 900  2000
-Wire Wire Line
-	950  2950 950  5850
-Wire Wire Line
-	2300 2750 2300 3700
-$Comp
-L Connector:Conn_WallSocket X1
-U 1 1 5EC190DC
-P 5550 4350
-F 0 "X1" V 5506 4162 50  0000 R CNN
-F 1 "X3" V 5461 4162 50  0001 R CNN
-F 2 "" H 5150 4350 50  0001 C CNN
-F 3 "~" H 5150 4350 50  0001 C CNN
-	1    5550 4350
-	-1   0    0    -1  
-$EndComp
-Text Notes 5300 3950 0    50   ~ 0
-12V Kfz switched 
-Wire Notes Line
-	5200 4800 5200 4000
-Wire Notes Line
-	6000 4800 5200 4800
-Wire Notes Line
-	6000 4000 6000 4800
-Wire Notes Line
-	5200 4000 6000 4000
-Wire Wire Line
-	6400 3000 6800 3000
-$Comp
-L NAC3MPA-1-WOT:NAC3MPA-1-WOT U?
-U 1 1 5F024C85
-P 6000 1450
-F 0 "U?" V 5761 2080 50  0000 L CNN
-F 1 "NAC3MPA-1-WOT" V 5852 2080 50  0000 L CNN
-F 2 "NAC3MPA-1-WOT" H 6000 1450 50  0001 L BNN
-F 3 "" H 6000 1450 50  0001 C CNN
-	1    6000 1450
-	0    1    1    0   
-$EndComp
-Text HLabel 6000 1350 1    50   Input ~ 0
-OUT1_GND
-Text HLabel 6200 1350 1    50   Input ~ 0
+	3600 2350 3600 3700
+Connection ~ 8500 2350
+Text HLabel 4550 1100 1    50   Input ~ 0
 OUT1_12V
+Text HLabel 4150 1100 1    50   Input ~ 0
+OUT1_GND
 Wire Wire Line
-	6400 1650 6400 3000
-$Comp
-L MyParts:Terminal16 U?
-U 1 1 5EF240EF
-P 4850 5900
-F 0 "U?" H 5278 5946 50  0000 L CNN
-F 1 "Terminal16" H 5278 5855 50  0000 L CNN
-F 2 "" H 4900 5950 50  0001 C CNN
-F 3 "" H 4900 5950 50  0001 C CNN
-	1    4850 5900
-	0    -1   -1   0   
-$EndComp
+	4550 3200 4550 1100
 Wire Wire Line
-	4050 6150 4400 6150
+	4550 3200 7950 3200
 Wire Wire Line
-	5300 6250 9150 6250
-Wire Wire Line
-	5750 4450 5750 6050
-Wire Wire Line
-	4050 6150 4050 2150
-Wire Wire Line
-	4050 2150 6200 2150
-Wire Wire Line
-	6200 2150 6200 1650
-Wire Wire Line
-	4400 6250 3900 6250
-Wire Wire Line
-	3900 6250 3900 1900
-Wire Wire Line
-	3900 1900 4450 1900
-Wire Wire Line
-	4450 1900 4450 1650
-Wire Wire Line
-	800  5950 4400 5950
-Wire Wire Line
-	950  5850 4400 5850
-Wire Wire Line
-	2300 5750 4400 5750
-Wire Wire Line
-	5300 5650 10850 5650
-Wire Wire Line
-	5750 4250 5750 3400
-Wire Wire Line
-	5300 6050 5750 6050
-Wire Wire Line
-	3100 2500 7350 2500
-Wire Wire Line
-	7150 4250 7400 4250
-Wire Notes Line
-	3850 600  3850 1750
-Wire Notes Line
-	3850 1750 7550 1750
-Wire Notes Line
-	7550 1750 7550 600 
-Wire Notes Line
-	7550 600  3850 600 
-Wire Wire Line
-	5300 6150 7350 6150
-Wire Wire Line
-	5750 3400 6800 3400
-Wire Wire Line
-	7900 3000 8850 3000
-Wire Wire Line
-	8850 3000 8850 4250
-Wire Wire Line
-	8850 4250 7700 4250
-Wire Wire Line
-	9600 4450 9600 6350
-Wire Wire Line
-	5300 6350 9600 6350
-Wire Wire Line
-	9150 5200 9150 6250
-Wire Wire Line
-	7350 4450 7350 6150
-Wire Wire Line
-	10300 1050 10300 2350
-Wire Wire Line
-	9150 4000 9150 2350
-Connection ~ 9150 2350
-Wire Wire Line
-	9150 2350 9600 2350
+	4150 5400 4150 1100
 $EndSCHEMATC
