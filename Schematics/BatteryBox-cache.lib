@@ -41,6 +41,25 @@ X Pin_2 2 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Conn_WallPlug
+#
+DEF Connector_Conn_WallPlug P 0 0 Y Y 1 F N
+F0 "P" -50 175 50 H V C BNN
+F1 "Connector_Conn_WallPlug" -225 0 50 V V C BNN
+F2 "" 400 0 50 H I C CNN
+F3 "" 400 0 50 H I C CNN
+DRAW
+A -125 0 150 -899 899 0 1 10 f -125 -150 -125 150
+P 2 0 1 20 -175 -100 -25 -100 N
+P 2 0 1 20 -175 100 -25 100 N
+P 2 0 1 10 -125 -150 -125 150 N
+P 2 0 1 0 -25 -100 100 -100 N
+P 2 0 1 0 -25 100 100 100 N
+X AC_P 1 200 100 200 L 50 50 1 1 w
+X AC_N 2 200 -100 200 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_WallPlug_Earth
 #
 DEF Connector_Conn_WallPlug_Earth P 0 0 Y Y 1 F N
@@ -327,6 +346,25 @@ X 6 ~ 50 -450 100 U 50 50 1 1 P
 X 7 ~ 150 -450 100 U 50 50 1 1 P
 X 8 ~ 250 -450 100 U 50 50 1 1 P
 X 9 ~ -450 450 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MyParts_USB_Charger
+#
+DEF MyParts_USB_Charger U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "MyParts_USB_Charger" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -50 -750 300 0 1 0 f
+S -500 -400 300 -1100 0 1 0 N
+S -250 -900 150 -800 0 1 0 N
+S -200 -850 100 -900 0 1 0 F
+S -200 -700 100 -650 0 1 0 F
+S 150 -600 -250 -700 0 1 0 N
+X 12V ~ -600 -600 100 R 50 50 1 1 I
+X GND ~ -600 -900 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
