@@ -368,7 +368,7 @@ Wire Wire Line
 Wire Notes Line
 	4600 5150 6550 5150
 Wire Wire Line
-	4500 5400 4150 5400
+	4500 5400 4350 5400
 Wire Wire Line
 	8500 2350 9600 2350
 Connection ~ 9600 2350
@@ -397,17 +397,6 @@ Wire Notes Line
 	10500 2200 7800 2200
 Wire Notes Line
 	7800 2200 7800 600 
-$Comp
-L Connector:Conn_WallPlug_Earth P1
-U 1 1 5ECE1CC2
-P 8000 1350
-F 0 "P1" H 8067 1675 50  0000 C CNN
-F 1 "Conn_WallPlug_Earth" H 8067 1584 50  0000 C CNN
-F 2 "" H 8400 1350 50  0001 C CNN
-F 3 "~" H 8400 1350 50  0001 C CNN
-	1    8000 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8300 1250 8400 1250
 Wire Wire Line
@@ -445,14 +434,36 @@ Wire Wire Line
 Wire Wire Line
 	3600 2350 3600 3700
 Connection ~ 8500 2350
-Text HLabel 4550 1100 1    50   Input ~ 0
+Text HLabel 4550 1350 1    50   Input ~ 0
 OUT1_12V
-Text HLabel 4150 1100 1    50   Input ~ 0
+Text HLabel 4350 1350 1    50   Input ~ 0
 OUT1_GND
 Wire Wire Line
-	4550 3200 4550 1100
-Wire Wire Line
 	4550 3200 7950 3200
+$Comp
+L NAC3MPA-1-WOT:NAC3MPA-1-WOT U?
+U 1 1 5EF1E21B
+P 4150 1450
+F 0 "U?" V 3911 2080 50  0000 L CNN
+F 1 "NAC3MPA-1-WOT" V 4002 2080 50  0000 L CNN
+F 2 "NAC3MPA-1-WOT" H 4150 1450 50  0001 L BNN
+F 3 "" H 4150 1450 50  0001 C CNN
+	1    4150 1450
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	4150 5400 4150 1100
+	4550 3200 4550 1650
+Wire Wire Line
+	4350 1650 4350 5400
+$Comp
+L Connector:Conn_WallPlug P?
+U 1 1 5EF29B60
+P 8100 1350
+F 0 "P?" H 8117 1675 50  0000 C CNN
+F 1 "Conn_WallPlug" H 8117 1584 50  0000 C CNN
+F 2 "" H 8500 1350 50  0001 C CNN
+F 3 "~" H 8500 1350 50  0001 C CNN
+	1    8100 1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
