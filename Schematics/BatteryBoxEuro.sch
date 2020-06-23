@@ -272,21 +272,7 @@ $EndComp
 Text Notes 8300 4650 0    50   ~ 0
 12V Zigarettenanzünder\n- 1m Kabel -
 Wire Wire Line
-	3200 4400 4150 4400
-Wire Wire Line
-	3200 7300 4600 7300
-Wire Wire Line
 	4600 7300 4600 7000
-Wire Notes Line
-	1100 6550 1900 6550
-Wire Notes Line
-	1900 6550 1900 7350
-Wire Notes Line
-	1900 7350 1100 7350
-Wire Notes Line
-	1100 7350 1100 6550
-Text Notes 1150 6500 0    50   ~ 0
-12V Kfz switched 
 Wire Notes Line
 	4600 3800 4600 5150
 Wire Notes Line
@@ -368,7 +354,7 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	1    2500 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 3200 4400
+Connection ~ 3600 4400
 Text HLabel 4550 1350 1    50   Input ~ 0
 OUT1_12V
 Text HLabel 4350 1350 1    50   Input ~ 0
@@ -402,21 +388,16 @@ F 3 "~" H 8500 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 4400 4150 2500
-Wire Wire Line
-	4150 2500 8500 2500
+	3600 4400 3600 2500
 Wire Wire Line
 	8500 2500 8500 2600
-Connection ~ 4150 4400
-Wire Wire Line
-	4150 4400 4300 4400
 Connection ~ 9600 2350
 Wire Wire Line
 	2600 3700 2600 2350
 Wire Wire Line
 	2700 4300 2700 4400
 Wire Wire Line
-	2700 4400 3200 4400
+	2700 4400 3600 4400
 Wire Wire Line
 	2300 5600 2300 4300
 Wire Wire Line
@@ -456,22 +437,34 @@ Wire Wire Line
 Wire Wire Line
 	2300 2750 2300 3700
 Wire Wire Line
-	3200 4400 3200 6850
+	3600 4400 4300 4400
+Wire Wire Line
+	3600 2500 8500 2500
 $Comp
 L Connector:Conn_WallSocket X1
 U 1 1 5EC190DC
-P 1500 6950
-F 0 "X1" V 1456 6762 50  0000 R CNN
-F 1 "X3" V 1411 6762 50  0001 R CNN
-F 2 "" H 1100 6950 50  0001 C CNN
-F 3 "~" H 1100 6950 50  0001 C CNN
-	1    1500 6950
+P 1450 7200
+F 0 "X1" V 1406 7012 50  0000 R CNN
+F 1 "X3" V 1361 7012 50  0001 R CNN
+F 2 "" H 1050 7200 50  0001 C CNN
+F 3 "~" H 1050 7200 50  0001 C CNN
+	1    1450 7200
 	-1   0    0    -1  
 $EndComp
+Text Notes 1200 6700 0    50   ~ 0
+12V Kfz switched 
+Wire Notes Line
+	1100 7550 1100 6750
+Wire Notes Line
+	1900 7550 1100 7550
+Wire Notes Line
+	1900 6750 1900 7550
+Wire Notes Line
+	1100 6750 1900 6750
 Wire Wire Line
-	1700 6850 3200 6850
+	1650 7300 4600 7300
 Wire Wire Line
-	3200 7050 3200 7300
+	1650 7100 3600 7100
 Wire Wire Line
-	1700 7050 3200 7050
+	3600 4400 3600 7100
 $EndSCHEMATC
