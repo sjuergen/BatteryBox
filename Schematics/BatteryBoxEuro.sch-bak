@@ -73,17 +73,6 @@ Wire Wire Line
 Wire Wire Line
 	9600 2850 9600 3250
 $Comp
-L MyParts:PB12V-Charger U3
-U 1 1 5E8B48DF
-P 5350 3850
-F 0 "U3" H 5550 3950 50  0000 C CNN
-F 1 "PB12V-Charger" H 5550 3850 50  0000 C CNN
-F 2 "" H 5350 3850 50  0001 C CNN
-F 3 "" H 5350 3850 50  0001 C CNN
-	1    5350 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L MyParts:Terminal16 U1
 U 1 1 5E8CE450
 P 4750 6550
@@ -107,36 +96,6 @@ F 3 "~" H 9600 3450 50  0001 C CNN
 	1    9600 3450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Conn_01x02_Female J1
-U 1 1 5E8F0E10
-P 4500 4400
-F 0 "J1" H 4528 4376 50  0000 L CNN
-F 1 " " H 4528 4285 50  0000 L CNN
-F 2 "" H 4500 4400 50  0001 C CNN
-F 3 "~" H 4500 4400 50  0001 C CNN
-	1    4500 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 5E8F155C
-P 4500 4400
-F 0 "J2" H 4608 4581 50  0000 C CNN
-F 1 " " H 4608 4490 50  0000 C CNN
-F 2 "" H 4500 4400 50  0001 C CNN
-F 3 "~" H 4500 4400 50  0001 C CNN
-	1    4500 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 4400 4700 4150
-Wire Wire Line
-	4700 4150 4850 4150
-Wire Wire Line
-	4700 4500 4700 4800
-Wire Wire Line
-	4700 4800 4850 4800
 Wire Wire Line
 	4300 7500 6550 7500
 Wire Wire Line
@@ -164,13 +123,9 @@ Wire Wire Line
 Wire Wire Line
 	10300 4900 10300 5950
 Wire Wire Line
-	4900 7700 4900 7000
-Wire Wire Line
 	4500 7400 6400 7400
 Wire Wire Line
 	4500 7000 4500 7400
-Wire Wire Line
-	7950 3000 6900 3000
 $Comp
 L Connector:Conn_WallSocket X3
 U 1 1 5EBD0381
@@ -182,8 +137,6 @@ F 3 "~" H 7600 4300 50  0001 C CNN
 	1    8000 4300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4500 6100 4500 5400
 Wire Wire Line
 	4600 6100 4600 5400
 Wire Wire Line
@@ -223,66 +176,14 @@ Wire Notes Line
 	10100 3800 9400 3800
 Wire Notes Line
 	9400 3800 9400 3100
-Wire Notes Line
-	6550 3800 4600 3800
-Wire Wire Line
-	6800 4450 6900 4450
-Wire Wire Line
-	6900 3000 6900 4450
-Wire Wire Line
-	6250 4150 6400 4150
-Wire Wire Line
-	6400 4150 6400 4450
 Wire Wire Line
 	7600 3400 7950 3400
 Wire Wire Line
 	4600 5400 8100 5400
-Wire Wire Line
-	6400 5550 6800 5550
-Wire Wire Line
-	6800 5550 6800 4550
-Wire Wire Line
-	6400 5550 6400 7400
-Wire Wire Line
-	6400 4550 6400 4800
-Wire Wire Line
-	6400 4800 6250 4800
-$Comp
-L Connector:Conn_01x02_Male J3
-U 1 1 5EC36685
-P 6600 4450
-F 0 "J3" H 6708 4631 50  0000 C CNN
-F 1 " " H 6708 4540 50  0000 C CNN
-F 2 "" H 6600 4450 50  0001 C CNN
-F 3 "~" H 6600 4450 50  0001 C CNN
-	1    6600 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J4
-U 1 1 5EC3704C
-P 6600 4450
-F 0 "J4" H 6628 4426 50  0000 L CNN
-F 1 " " H 6628 4335 50  0000 L CNN
-F 2 "" H 6600 4450 50  0001 C CNN
-F 3 "~" H 6600 4450 50  0001 C CNN
-	1    6600 4450
-	1    0    0    -1  
-$EndComp
 Text Notes 8300 4650 0    50   ~ 0
 12V Zigarettenanzünder\n- 1m Kabel -
 Wire Wire Line
 	4600 7300 4600 7000
-Wire Notes Line
-	4600 3800 4600 5150
-Wire Notes Line
-	6550 3800 6550 5150
-Wire Wire Line
-	3900 7700 4900 7700
-Wire Wire Line
-	3900 4500 4300 4500
-Wire Wire Line
-	3900 4500 3900 7700
 $Comp
 L MyParts:230V_KfzCharger U6
 U 1 1 5EC5CF8F
@@ -302,10 +203,6 @@ Wire Wire Line
 	9600 2350 10300 2350
 Wire Wire Line
 	10300 2350 10300 3700
-Wire Notes Line
-	4600 5150 6550 5150
-Wire Wire Line
-	4500 5400 4350 5400
 Wire Wire Line
 	10050 1050 10300 1050
 Wire Wire Line
@@ -360,22 +257,20 @@ OUT1_12V
 Text HLabel 4350 1350 1    50   Input ~ 0
 OUT1_GND
 Wire Wire Line
-	4550 3200 7950 3200
+	4700 3200 7950 3200
 $Comp
 L NAC3MPA-1-WOT:NAC3MPA-1-WOT U?
 U 1 1 5EF1E21B
-P 4150 1450
-F 0 "U?" V 3911 2080 50  0000 L CNN
-F 1 "NAC3MPA-1-WOT" V 4002 2080 50  0000 L CNN
-F 2 "NAC3MPA-1-WOT" H 4150 1450 50  0001 L BNN
-F 3 "" H 4150 1450 50  0001 C CNN
-	1    4150 1450
+P 4300 1450
+F 0 "U?" V 4061 2080 50  0000 L CNN
+F 1 "NAC3MPA-1-WOT" V 4152 2080 50  0000 L CNN
+F 2 "NAC3MPA-1-WOT" H 4300 1450 50  0001 L BNN
+F 3 "" H 4300 1450 50  0001 C CNN
+	1    4300 1450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4550 3200 4550 1650
-Wire Wire Line
-	4350 1650 4350 5400
+	4700 3200 4700 1650
 $Comp
 L Connector:Conn_WallPlug P?
 U 1 1 5EF29B60
@@ -437,8 +332,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 2750 2300 3700
 Wire Wire Line
-	3600 4400 4300 4400
-Wire Wire Line
 	3600 2500 8500 2500
 $Comp
 L Connector:Conn_WallSocket X1
@@ -467,4 +360,10 @@ Wire Wire Line
 	1650 7100 3600 7100
 Wire Wire Line
 	3600 4400 3600 7100
+Wire Wire Line
+	6400 3000 7950 3000
+Wire Wire Line
+	6400 3000 6400 7400
+Wire Wire Line
+	4500 1650 4500 6100
 $EndSCHEMATC
