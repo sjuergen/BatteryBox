@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
+Title "BatteryBox 400x300 Euro"
 Date ""
 Rev ""
 Comp ""
@@ -36,25 +36,14 @@ F 3 "~" V 9600 4310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery BT1
-U 1 1 5E8737E8
-P 1450 4900
-F 0 "BT1" H 1558 4946 50  0000 L CNN
-F 1 "12V" H 1558 4855 50  0000 L CNN
-F 2 "" V 1450 4960 50  0001 C CNN
-F 3 "~" V 1450 4960 50  0001 C CNN
-	1    1450 4900
-	1    0    0    -1  
-$EndComp
-$Comp
 L MyParts:DPlusSimulator U4
 U 1 1 5E87470E
-P 2250 2700
-F 0 "U4" H 3128 2771 50  0000 L CNN
-F 1 "DPlusSimulator" H 3128 2680 50  0000 L CNN
-F 2 "" H 2000 3200 50  0001 C CNN
-F 3 "" H 2000 3200 50  0001 C CNN
-	1    2250 2700
+P 1150 3100
+F 0 "U4" H 2028 3171 50  0000 L CNN
+F 1 "DPlusSimulator" H 2028 3080 50  0000 L CNN
+F 2 "" H 900 3600 50  0001 C CNN
+F 3 "" H 900 3600 50  0001 C CNN
+	1    1150 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -68,8 +57,6 @@ F 3 "" H 10400 4300 50  0001 C CNN
 	1    10400 4300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1450 2000 1450 3450
 $Comp
 L MyParts:F_Distributor U2
 U 1 1 5E8A7CC8
@@ -85,15 +72,6 @@ Wire Wire Line
 	9600 2550 9600 2350
 Wire Wire Line
 	9600 2850 9600 3250
-Wire Wire Line
-	3200 2600 3300 2600
-Wire Wire Line
-	1450 2000 2350 2000
-Wire Wire Line
-	1450 3450 3800 3450
-Connection ~ 1450 3450
-Wire Wire Line
-	1450 3450 1450 4700
 $Comp
 L MyParts:PB12V-Charger U3
 U 1 1 5E8B48DF
@@ -118,10 +96,6 @@ F 3 "" H 4800 6600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 7000 4300 7500
-Wire Wire Line
-	1450 5100 1450 5900
-Wire Wire Line
-	2350 3350 2350 5750
 $Comp
 L Switch:SW_DPST_x2 S1
 U 1 1 5E8E5E5B
@@ -172,15 +146,13 @@ Wire Wire Line
 Wire Wire Line
 	4800 6100 4800 5750
 Wire Wire Line
-	4800 5750 2350 5750
+	4800 5750 950  5750
 Wire Wire Line
 	4900 6100 4900 5600
 Wire Wire Line
-	4900 5600 3300 5600
-Wire Wire Line
 	4700 6100 4700 5900
 Wire Wire Line
-	4700 5900 1450 5900
+	4700 5900 750  5900
 Wire Wire Line
 	4400 7000 4400 7600
 Wire Wire Line
@@ -299,25 +271,8 @@ F 3 "~" H 6600 4450 50  0001 C CNN
 $EndComp
 Text Notes 8300 4650 0    50   ~ 0
 12V Zigarettenanzünder\n- 1m Kabel -
-$Comp
-L Connector:Conn_WallSocket X1
-U 1 1 5EC190DC
-P 1500 6950
-F 0 "X1" V 1456 6762 50  0000 R CNN
-F 1 "X3" V 1411 6762 50  0001 R CNN
-F 2 "" H 1100 6950 50  0001 C CNN
-F 3 "~" H 1100 6950 50  0001 C CNN
-	1    1500 6950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	3700 4400 4300 4400
-Wire Wire Line
-	3700 7050 1700 7050
-Wire Wire Line
-	1700 6850 3200 6850
-Wire Wire Line
-	3200 6850 3200 7300
+	3200 4400 4150 4400
 Wire Wire Line
 	3200 7300 4600 7300
 Wire Wire Line
@@ -336,8 +291,6 @@ Wire Notes Line
 	4600 3800 4600 5150
 Wire Notes Line
 	6550 3800 6550 5150
-Wire Wire Line
-	3700 4400 3700 7050
 Wire Wire Line
 	3900 7700 4900 7700
 Wire Wire Line
@@ -360,8 +313,6 @@ Wire Wire Line
 Wire Wire Line
 	9600 4050 9600 3650
 Wire Wire Line
-	8500 2350 8500 2600
-Wire Wire Line
 	9600 2350 10300 2350
 Wire Wire Line
 	10300 2350 10300 3700
@@ -369,9 +320,6 @@ Wire Notes Line
 	4600 5150 6550 5150
 Wire Wire Line
 	4500 5400 4350 5400
-Wire Wire Line
-	8500 2350 9600 2350
-Connection ~ 9600 2350
 Wire Wire Line
 	10050 1050 10300 1050
 Wire Wire Line
@@ -412,28 +360,15 @@ Wire Wire Line
 $Comp
 L MyParts:JD2912-1Z-12VDC_40A K1
 U 1 1 5EF13C07
-P 3500 4000
-F 0 "K1" H 3930 4046 50  0000 L CNN
-F 1 "JD2912-1Z-12VDC_40A" H 3930 3955 50  0000 L CNN
-F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3950 3950 50  0001 L CNN
-F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3500 4000 50  0001 C CNN
-	1    3500 4000
+P 2500 4000
+F 0 "K1" H 2930 4046 50  0000 L CNN
+F 1 "JD2912-1Z-12VDC_40A" H 2930 3955 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2950 3950 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 2500 4000 50  0001 C CNN
+	1    2500 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3700 4300 3700 4400
-Connection ~ 3700 4400
-Wire Wire Line
-	3300 4300 3300 5600
-Wire Wire Line
-	3300 2600 3300 3700
-Wire Wire Line
-	3800 3450 3800 3700
-Wire Wire Line
-	8500 2350 3600 2350
-Wire Wire Line
-	3600 2350 3600 3700
-Connection ~ 8500 2350
+Connection ~ 3200 4400
 Text HLabel 4550 1350 1    50   Input ~ 0
 OUT1_12V
 Text HLabel 4350 1350 1    50   Input ~ 0
@@ -466,4 +401,77 @@ F 3 "~" H 8500 1350 50  0001 C CNN
 	1    8100 1350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4150 4400 4150 2500
+Wire Wire Line
+	4150 2500 8500 2500
+Wire Wire Line
+	8500 2500 8500 2600
+Connection ~ 4150 4400
+Wire Wire Line
+	4150 4400 4300 4400
+Connection ~ 9600 2350
+Wire Wire Line
+	2600 3700 2600 2350
+Wire Wire Line
+	2700 4300 2700 4400
+Wire Wire Line
+	2700 4400 3200 4400
+Wire Wire Line
+	2300 5600 2300 4300
+Wire Wire Line
+	2300 5600 4900 5600
+Wire Wire Line
+	2200 2750 2300 2750
+Wire Wire Line
+	2600 2350 9600 2350
+Wire Wire Line
+	2800 2000 2800 3700
+$Comp
+L MyParts:12VKfz_Plug X?
+U 1 1 5EF8167C
+P 1050 1300
+F 0 "X?" V 1206 1278 50  0000 L CNN
+F 1 "12VKfz_Plug" V 1115 1278 50  0000 L CNN
+F 2 "" H 1050 1300 50  0001 C CNN
+F 3 "" H 1050 1300 50  0001 C CNN
+	1    1050 1300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	750  1750 750  5900
+Wire Wire Line
+	900  2000 900  1750
+Wire Wire Line
+	900  2000 2800 2000
+Wire Wire Line
+	1050 2550 900  2550
+Connection ~ 900  2000
+Wire Wire Line
+	950  2950 1050 2950
+Wire Wire Line
+	900  2550 900  2000
+Wire Wire Line
+	950  2950 950  5750
+Wire Wire Line
+	2300 2750 2300 3700
+Wire Wire Line
+	3200 4400 3200 6850
+$Comp
+L Connector:Conn_WallSocket X1
+U 1 1 5EC190DC
+P 1500 6950
+F 0 "X1" V 1456 6762 50  0000 R CNN
+F 1 "X3" V 1411 6762 50  0001 R CNN
+F 2 "" H 1100 6950 50  0001 C CNN
+F 3 "~" H 1100 6950 50  0001 C CNN
+	1    1500 6950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6850 3200 6850
+Wire Wire Line
+	3200 7050 3200 7300
+Wire Wire Line
+	1700 7050 3200 7050
 $EndSCHEMATC
