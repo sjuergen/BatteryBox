@@ -354,7 +354,7 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	1    2500 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 3200 4400
+Connection ~ 3600 4400
 Text HLabel 4550 1350 1    50   Input ~ 0
 OUT1_12V
 Text HLabel 4350 1350 1    50   Input ~ 0
@@ -388,7 +388,7 @@ F 3 "~" H 8500 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 4400 3200 2500
+	3600 4400 3600 2500
 Wire Wire Line
 	8500 2500 8500 2600
 Connection ~ 9600 2350
@@ -397,7 +397,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 4300 2700 4400
 Wire Wire Line
-	2700 4400 3200 4400
+	2700 4400 3600 4400
 Wire Wire Line
 	2300 5600 2300 4300
 Wire Wire Line
@@ -437,9 +437,9 @@ Wire Wire Line
 Wire Wire Line
 	2300 2750 2300 3700
 Wire Wire Line
-	3200 4400 4300 4400
+	3600 4400 4300 4400
 Wire Wire Line
-	3200 2500 8500 2500
+	3600 2500 8500 2500
 $Comp
 L Connector:Conn_WallSocket X1
 U 1 1 5EC190DC
@@ -464,7 +464,7 @@ Wire Notes Line
 Wire Wire Line
 	1650 7300 4600 7300
 Wire Wire Line
-	1650 7100 3200 7100
+	1650 7100 3600 7100
 Wire Wire Line
-	3200 4400 3200 7100
+	3600 4400 3600 7100
 $EndSCHEMATC

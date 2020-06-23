@@ -1,46 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Conn_01x02_Female
-#
-DEF Connector_Conn_01x02_Female J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Conn_01x02_Female" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
-A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
-P 2 1 1 6 -50 -100 -20 -100 N
-P 2 1 1 6 -50 0 -20 0 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Conn_01x02_Male
-#
-DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S 34 -95 0 -105 1 1 6 F
-S 34 5 0 -5 1 1 6 F
-P 2 1 1 6 50 -100 34 -100 N
-P 2 1 1 6 50 0 34 0 N
-X Pin_1 1 200 0 150 L 50 50 1 1 P
-X Pin_2 2 200 -100 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Conn_WallPlug
 #
 DEF Connector_Conn_WallPlug P 0 0 Y Y 1 F N
@@ -271,26 +231,6 @@ X ~ 85 -200 300 100 D 50 50 1 1 P
 X ~ 86 -200 -300 100 U 50 50 1 1 P
 X ~ 87 300 300 100 D 50 50 1 1 P
 X ~ 87a 100 300 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# MyParts_PB12V-Charger
-#
-DEF MyParts_PB12V-Charger U 0 40 Y Y 1 F N
-F0 "U" -300 -150 50 H V C CNN
-F1 "MyParts_PB12V-Charger" 200 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-T 0 0 -400 118 0 0 0 12V Normal 0 C C
-T 0 400 -800 118 0 0 0 12V Normal 0 C C
-S -400 -100 800 -1200 0 0 0 f
-P 2 0 0 0 -400 -1150 750 -100 N
-P 2 0 0 0 -350 -1200 800 -150 N
-X VSS + -500 -300 100 R 50 50 1 1 I
-X GND - -500 -950 100 R 50 50 1 1 P
-X Battery+ ~ 900 -300 100 L 50 50 1 1 O
-X Battery- ~ 900 -950 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
