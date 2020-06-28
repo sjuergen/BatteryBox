@@ -14,8 +14,9 @@ Integrate it in a 400x300mm Eurobox to be part
 
 And I want to use ist for a "quite" independent "Power-Supply". My expectations are:
 
-- supply the cooling box with power for a couple of hours while I'm hiking without consumption power from the starter battery
+- supply the cooling box (in my case an Dometic CF35W) with power for a couple of hours while I'm hiking without consumption power from the starter battery
 - don't spent money for the fully integration of a second battery which can be charged via the alternator
+- I don't have the expectation, that I
 
 # Requirements
 
@@ -34,4 +35,4 @@ And I want to use ist for a "quite" independent "Power-Supply". My expectations 
 
 # Disclaimer
 
-The schematic here on GitHub is just an proof of concept. It doesn't fulfill all the electrical requirements regarding safety and  established standards. This battery is a self made project and must not be created if you aren't a electrical specialist.
+The schematic here on GitHub is just an proof of concept. It doesn't fulfill all the electrical requirements regarding safety and  established standards. This battery is a self made project and must not be created if you aren't a electrical specialist. Building the battery box is on your own risk.

@@ -253,7 +253,7 @@ ENDDEF
 DEF MyParts_Terminal16 X 0 40 Y Y 1 F N
 F0 "X" 350 -100 50 H V C CNN
 F1 "MyParts_Terminal16" 50 50 50 H V C CNN
-F2 "" 50 50 50 H I C CNN
+F2 "MyParts:GroundTerminal" 50 50 50 H V C CNN
 F3 "" 50 50 50 H I C CNN
 DRAW
 S -600 400 400 -400 0 1 0 f
