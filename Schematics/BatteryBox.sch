@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -54,4 +54,21 @@ Wire Wire Line
 	7550 2900 7550 3000
 Wire Wire Line
 	7550 3000 8350 3000
+$Sheet
+S 5650 4600 1050 1650
+U 5F0C81D9
+F0 "BatteryPowerBox" 50
+F1 "BatteryPowerBox.sch" 50
+F2 "L_IN" I L 5650 4800 50 
+F3 "N_IN" I L 5650 5000 50 
+F4 "12V+_OUT" I L 5650 5750 50 
+F5 "0V_OUT" I L 5650 5950 50 
+F6 "PE" I L 5650 5200 50 
+$EndSheet
+$Sheet
+S 4150 6800 1600 400 
+U 5F0EC429
+F0 "CoolerBox2" 50
+F1 "CoolerBox2.sch" 50
+$EndSheet
 $EndSCHEMATC

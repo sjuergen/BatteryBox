@@ -1,0 +1,249 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1050 1400 0    50   Input ~ 0
+L_IN
+Text HLabel 1050 1700 0    50   Input ~ 0
+N_IN
+Text HLabel 1700 5100 1    50   Input ~ 0
+12V+_OUT
+Text HLabel 1550 5300 1    50   Input ~ 0
+0V_OUT
+$Comp
+L Device:Battery BT?
+U 1 1 5F0C8690
+P 7150 3900
+F 0 "BT?" H 7258 3946 50  0000 L CNN
+F 1 "Battery" H 7258 3855 50  0000 L CNN
+F 2 "" V 7150 3960 50  0001 C CNN
+F 3 "~" V 7150 3960 50  0001 C CNN
+	1    7150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW?
+U 1 1 5F0CB6B3
+P 7150 3000
+F 0 "SW?" V 7196 2912 50  0000 R CNN
+F 1 "SW_DPST_x2" V 7105 2912 50  0000 R CNN
+F 2 "" H 7150 3000 50  0001 C CNN
+F 3 "~" H 7150 3000 50  0001 C CNN
+	1    7150 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MyParts:F_Distributor U?
+U 1 1 5F0CCAE4
+P 4050 3550
+F 0 "U?" H 4050 2727 50  0000 C CNN
+F 1 "F_Distributor" H 4050 2636 50  0000 C CNN
+F 2 "" H 4050 3550 50  0001 C CNN
+F 3 "" H 4050 3550 50  0001 C CNN
+	1    4050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyParts:230V_KfzCharger U?
+U 1 1 5F0CDA73
+P 3900 1100
+F 0 "U?" H 4100 1165 50  0000 C CNN
+F 1 "230V_KfzCharger" H 4100 1074 50  0000 C CNN
+F 2 "" H 3900 1100 50  0001 C CNN
+F 3 "" H 3900 1100 50  0001 C CNN
+	1    3900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L NAC3MPA-1-WOT:NAC3MPA-1-WOT U?
+U 1 1 5F0CE699
+P 1250 5500
+F 0 "U?" H 1057 6267 50  0000 C CNN
+F 1 "NAC3MPA-1-WOT" H 1057 6176 50  0000 C CNN
+F 2 "NAC3MPA-1-WOT" H 1250 5500 50  0001 L BNN
+F 3 "" H 1250 5500 50  0001 C CNN
+	1    1250 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1400 3400 1400
+Wire Wire Line
+	1050 1700 2900 1700
+Wire Wire Line
+	2900 1700 2900 2050
+Wire Wire Line
+	2900 2050 3400 2050
+$Comp
+L Device:Fuse F?
+U 1 1 5F0D0D8A
+P 7150 2000
+F 0 "F?" H 7210 2046 50  0000 L CNN
+F 1 "Fuse" H 7210 1955 50  0000 L CNN
+F 2 "" V 7080 2000 50  0001 C CNN
+F 3 "~" H 7150 2000 50  0001 C CNN
+	1    7150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyParts:Pulser U?
+U 1 1 5F0D362B
+P 6450 3650
+F 0 "U?" V 6404 3728 50  0000 L CNN
+F 1 "Pulser" V 6495 3728 50  0000 L CNN
+F 2 "" H 6450 3650 50  0001 C CNN
+F 3 "" H 6450 3650 50  0001 C CNN
+	1    6450 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 3700 7150 3200
+Wire Wire Line
+	7150 2800 7150 2150
+Wire Wire Line
+	6350 4250 6350 5300
+Wire Wire Line
+	6350 5300 7150 5300
+Wire Wire Line
+	7150 5300 7150 4100
+Wire Wire Line
+	4050 3350 4050 2650
+Wire Wire Line
+	4050 2650 6350 2650
+Connection ~ 6350 2650
+Wire Wire Line
+	6350 2650 6350 3050
+Wire Wire Line
+	4800 1400 6350 1400
+Wire Wire Line
+	4800 2050 5350 2050
+Wire Wire Line
+	5350 2050 5350 5300
+Wire Wire Line
+	5350 5300 6350 5300
+Connection ~ 6350 5300
+Connection ~ 5350 5300
+Wire Wire Line
+	1450 5300 5350 5300
+Wire Wire Line
+	2300 3750 3500 3750
+Wire Wire Line
+	1450 5100 2300 5100
+Wire Wire Line
+	2300 5100 2300 3750
+Text HLabel 1050 2000 0    50   Input ~ 0
+PE
+Wire Wire Line
+	7150 1400 7150 1850
+Wire Wire Line
+	6350 1400 6350 2650
+Connection ~ 6350 1400
+Wire Wire Line
+	6350 1400 7150 1400
+$Comp
+L Connector:Conn_WallSocket J?
+U 1 1 5F0DCF32
+P 2150 6700
+F 0 "J?" H 2106 7025 50  0000 C CNN
+F 1 "Conn_WallSocket" H 2106 6934 50  0000 C CNN
+F 2 "" H 1750 6700 50  0001 C CNN
+F 3 "~" H 1750 6700 50  0001 C CNN
+	1    2150 6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_WallSocket J?
+U 1 1 5F0DDC3E
+P 3300 6700
+F 0 "J?" H 3256 7025 50  0000 C CNN
+F 1 "Conn_WallSocket" H 3256 6934 50  0000 C CNN
+F 2 "" H 2900 6700 50  0001 C CNN
+F 3 "~" H 2900 6700 50  0001 C CNN
+	1    3300 6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW?
+U 1 1 5F0DDE74
+P 5400 6300
+F 0 "SW?" V 5446 6212 50  0000 R CNN
+F 1 "SW_DPST_x2" V 5355 6212 50  0000 R CNN
+F 2 "" H 5400 6300 50  0001 C CNN
+F 3 "~" H 5400 6300 50  0001 C CNN
+	1    5400 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Voltmeter_DC MES?
+U 1 1 5F0DE8B0
+P 4450 6650
+F 0 "MES?" H 4603 6696 50  0000 L CNN
+F 1 "Voltmeter_DC" H 4603 6605 50  0000 L CNN
+F 2 "" V 4450 6750 50  0001 C CNN
+F 3 "~" V 4450 6750 50  0001 C CNN
+	1    4450 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3950 3100 3950
+Wire Wire Line
+	3100 3950 3100 5800
+Wire Wire Line
+	3100 5800 5400 5800
+Wire Wire Line
+	5400 5800 5400 6100
+Wire Wire Line
+	6350 7350 6350 5300
+Wire Wire Line
+	2350 7350 2350 6800
+Wire Wire Line
+	3500 6800 3500 7350
+Connection ~ 3500 7350
+Wire Wire Line
+	3500 7350 2350 7350
+Wire Wire Line
+	4450 6850 4450 7350
+Connection ~ 4450 7350
+Wire Wire Line
+	4450 7350 3500 7350
+Wire Wire Line
+	4450 7350 6350 7350
+Wire Wire Line
+	5100 6850 5100 6100
+Wire Wire Line
+	5100 6100 4450 6100
+Wire Wire Line
+	2350 6100 2350 6600
+Wire Wire Line
+	3500 6600 3500 6100
+Connection ~ 3500 6100
+Wire Wire Line
+	3500 6100 2350 6100
+Wire Wire Line
+	4450 6450 4450 6100
+Connection ~ 4450 6100
+Wire Wire Line
+	4450 6100 3500 6100
+Wire Wire Line
+	5400 6500 5400 6850
+Wire Wire Line
+	5400 6850 5100 6850
+Wire Notes Line
+	1700 5950 6050 5950
+Wire Notes Line
+	6050 5950 6050 7550
+Wire Notes Line
+	6050 7550 1700 7550
+Wire Notes Line
+	1700 7550 1700 5950
+$EndSCHEMATC
