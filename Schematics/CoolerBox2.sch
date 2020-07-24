@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MyParts:DPlusSimulator U14
+L MyParts:DPlusSimulator U5
 U 1 1 5F0EC705
 P 2650 3550
-F 0 "U14" H 3125 4415 50  0000 C CNN
+F 0 "U5" H 3125 4415 50  0000 C CNN
 F 1 "DPlusSimulator" H 3125 4324 50  0000 C CNN
 F 2 "" H 3800 4150 50  0001 C CNN
 F 3 "" H 3800 4150 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "" H 3800 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MyParts:JD2912-1Z-12VDC_40A K2
+L MyParts:JD2912-1Z-12VDC_40A K1
 U 1 1 5F0ECF0F
 P 3500 4750
-F 0 "K2" H 3930 4796 50  0000 L CNN
+F 0 "K1" H 3930 4796 50  0000 L CNN
 F 1 "JD2912-1Z-12VDC_40A" H 3930 4705 50  0000 L CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3950 4700 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3500 4750 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	1    0    0    -1  
 $EndComp
 $Comp
-L MyParts:JD2912-1Z-12VDC_40A K3
+L MyParts:JD2912-1Z-12VDC_40A K2
 U 1 1 5F0ED708
 P 5300 4800
-F 0 "K3" H 5730 4846 50  0000 L CNN
+F 0 "K2" H 5730 4846 50  0000 L CNN
 F 1 "JD2912-1Z-12VDC_40A" H 5730 4755 50  0000 L CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 5750 4750 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 5300 4800 50  0001 C CNN
@@ -108,10 +108,10 @@ Text HLabel 1900 2200 1    50   Input ~ 0
 Text HLabel 1700 2400 1    50   Input ~ 0
 230V_N
 $Comp
-L Connector:Conn_WallSocket_Earth J5
+L Connector:Conn_WallSocket_Earth J3
 U 1 1 5F104118
 P 9850 3350
-F 0 "J5" H 10104 3361 50  0000 L CNN
+F 0 "J3" H 10104 3361 50  0000 L CNN
 F 1 "Conn_WallSocket_Earth" H 10104 3270 50  0000 L CNN
 F 2 "" H 9550 3450 50  0001 C CNN
 F 3 "~" H 9550 3450 50  0001 C CNN
@@ -121,10 +121,10 @@ $EndComp
 Text HLabel 1550 2600 1    50   Input ~ 0
 PE
 $Comp
-L Connector:Conn_WallPlug_Earth P2
+L Connector:Conn_WallPlug_Earth P1
 U 1 1 5F0CAFB1
 P 900 2300
-F 0 "P2" H 967 2625 50  0000 C CNN
+F 0 "P1" H 967 2625 50  0000 C CNN
 F 1 "Conn_WallPlug_Earth" H 967 2534 50  0000 C CNN
 F 2 "" H 1300 2300 50  0001 C CNN
 F 3 "~" H 1300 2300 50  0001 C CNN
@@ -132,10 +132,10 @@ F 3 "~" H 1300 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MyParts:Inverter U15
+L MyParts:Inverter U6
 U 1 1 5F1053BD
 P 6650 5500
-F 0 "U15" H 6650 5715 50  0000 C CNN
+F 0 "U6" H 6650 5715 50  0000 C CNN
 F 1 "Inverter" H 6650 5624 50  0000 C CNN
 F 2 "" H 6650 5500 50  0001 C CNN
 F 3 "" H 6650 5500 50  0001 C CNN
@@ -223,10 +223,10 @@ Wire Wire Line
 Wire Wire Line
 	7600 3550 7600 6050
 $Comp
-L Connector:Conn_WallSocket_Earth J?
+L Connector:Conn_WallSocket_Earth J4
 U 1 1 5F1BD7BA
 P 9850 4100
-F 0 "J?" H 10104 4111 50  0000 L CNN
+F 0 "J4" H 10104 4111 50  0000 L CNN
 F 1 "Conn_WallSocket_Earth" H 10104 4020 50  0000 L CNN
 F 2 "" H 9550 4200 50  0001 C CNN
 F 3 "~" H 9550 4200 50  0001 C CNN
@@ -255,10 +255,10 @@ Connection ~ 9200 3550
 Wire Wire Line
 	9200 3550 9650 3550
 $Comp
-L MyParts:DometicCF35 U
+L MyParts:DometicCF35 U7
 U 1 1 5F0EFAA9
 P 10300 850
-F 0 "U" H 10900 300 50  0000 L CNN
+F 0 "U7" H 10900 300 50  0000 L CNN
 F 1 "DometicCF35" H 10050 850 50  0000 L CNN
 F 2 "" H 10300 850 50  0001 C CNN
 F 3 "" H 10300 850 50  0001 C CNN

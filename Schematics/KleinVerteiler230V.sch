@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Relay:FINDER-30.22 K?
+L Relay:FINDER-30.22 K3
 U 1 1 5F16ADE4
 P 5800 4300
-F 0 "K?" H 6430 4346 50  0000 L CNN
+F 0 "K3" H 6430 4346 50  0000 L CNN
 F 1 "FINDER-30.22" H 6430 4255 50  0000 L CNN
 F 2 "Relay_THT:Relay_DPDT_Finder_30.22" H 7150 4270 50  0001 C CNN
 F 3 "http://gfinder.findernet.com/assets/Series/354/S30EN.pdf" H 5800 4300 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "http://gfinder.findernet.com/assets/Series/354/S30EN.pdf" H 5800 4300 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L MyParts:FI Q?
+L MyParts:FI Q1
 U 1 1 5F16CA33
 P 3900 2250
-F 0 "Q?" V 3435 2025 50  0000 C CNN
+F 0 "Q1" V 3435 2025 50  0000 C CNN
 F 1 "FI" V 3526 2025 50  0000 C CNN
 F 2 "" H 3900 2250 50  0001 C CNN
 F 3 "" H 3900 2250 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "" H 3900 2250 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:Polyfuse F?
+L Device:Polyfuse F2
 U 1 1 5F16D2C4
 P 3450 1050
-F 0 "F?" V 3225 1050 50  0000 C CNN
+F 0 "F2" V 3225 1050 50  0000 C CNN
 F 1 "10A-B" V 3316 1050 50  0000 C CNN
 F 2 "" H 3500 850 50  0001 L CNN
 F 3 "~" H 3450 1050 50  0001 C CNN
@@ -148,4 +148,36 @@ Text HLabel 10550 2450 2    50   Input ~ 0
 230V_N_OutS
 Text HLabel 10550 2650 2    50   Input ~ 0
 230V_PE_OutS
+Wire Notes Line
+	1550 950  1550 1550
+Wire Notes Line
+	1550 1550 1650 1550
+Wire Notes Line
+	1650 1550 1650 950 
+Wire Notes Line
+	1650 950  1550 950 
+Wire Notes Line
+	1550 1950 1550 2550
+Wire Notes Line
+	1550 2550 1650 2550
+Wire Notes Line
+	1650 2550 1650 1950
+Wire Notes Line
+	1650 1950 1550 1950
+Wire Notes Line
+	10200 950  10300 950 
+Wire Notes Line
+	10300 950  10300 1550
+Wire Notes Line
+	10300 1550 10200 1550
+Wire Notes Line
+	10200 1550 10200 950 
+Wire Notes Line
+	10200 2150 10200 2750
+Wire Notes Line
+	10200 2750 10300 2750
+Wire Notes Line
+	10300 2750 10300 2150
+Wire Notes Line
+	10300 2150 10200 2150
 $EndSCHEMATC

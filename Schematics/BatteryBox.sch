@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -13,24 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 9350 3750 1400 2350
-U 5EF099A0
-F0 "CoolerBox" 50
-F1 "CoolerBox.sch" 50
-F2 "V_DC" I L 9350 4300 50 
-F3 "GND" I L 9350 4600 50 
-F4 "AC_P" I L 9350 5000 50 
-F5 "AC_N" I L 9350 5200 50 
-$EndSheet
-$Sheet
-S 7500 3750 1500 3500
-U 5EF0A72F
-F0 "BatteryBoxEuro" 50
-F1 "BatteryBoxEuro.sch" 50
-F2 "OUT1_12V" I R 9000 4000 50 
-F3 "OUT1_GND" I R 9000 4300 50 
-$EndSheet
 $Sheet
 S 7850 950  1050 1650
 U 5F0C81D9
