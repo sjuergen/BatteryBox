@@ -1,10 +1,36 @@
-# BatteryBox
+# Hanni - T5 Multivan
 
-BatteryBox
+## Inhalt
 
-# Situation
+1. Allgemein
+2. Startup-Phase
 
-While I was camping with my T5 Multivan - used at the one hand as an usual car and at the other hand as a camper van, I had the problem  with the 12V power supply for my bus. Since I had just the starter battery, I had two times the situation, that the cooling box and other equipment has consumed too much energy from the starter battery so that I couldn't start the motor. I was forced to find a solution. The main guideline was: it should be as cheap as possible.
+-
+
+## Allgemeines
+
+Seit 2019 bin ich Besitzer eines VW T5 Multivan. Sein Name ist Hannibal - kurz Hanni. Es wurde ein Multivan, da ich einerseits ein Fahrzeug wollte, das ich mehr oder weniger als Alltagsauto fahre. Und andererseits ich die Möglichkeit nutzen wollte, damit in den Camping-Urlaub zu fahren. Damit schied ein voll ausgebautes Wohnmobil aus.
+Da ich gerne selbst handwerke, hatte ich anfangs noch die Idee einen VW Transporter selbst auszubauen. Doch ich entschied mich aus praktischen Gründen für einen Multivan. Die praktischen Gründe waren für mich:
+
+- mindestens 3 Sitzplätze (bei bedarf bis zu 7)
+- Integrierte Bodenschienen zur einfachen Befestigung von Sitzen und Campingausrüstung (z.B. Bett)
+- Vorhandene Isolierung und Innenverkleidung
+
+Neben den Anschaffnungskosten, zugegeben auch nicht ganz günstig gegenüber einem Transporter, wollte ich die Kosten für den Umbau als Camper so gering wie möglich halten. Und immer unter der Prämisse, das Auto nicht exclusiv als Camper zu nutzen.
+
+## Startup-Phase
+
+Nachdem ich den Bus hatte, wollten ich so schnell wie möglich die Camping-Tauglichkeit testen. Das Wichtigste war eine Schlafmöglichkeit zu haben.
+
+### Der Schlafplatz
+
+Das Multiflex-Board ist ja wirklich eine coole Sache. Aber viel zu teuer. So habe ich mir im Baumarkt etwas 54x54mm Hobelware besorgt. Damit habe ich mir ein Bettgestell gebaut, das ich mit passenden Schrauben für die Multivan-Schienen befestigt habe.
+
+Einen Lattenrost (200x140cm) gabs kostenlos bei Kleinanzeigen. Und idealerweise gibt es auch noch vorgefertigte Matratzen für den Multivan.
+
+### Erster Ausflug
+
+Der erste Ausflug fand Statt
 
 # Idea
 
@@ -35,4 +61,4 @@ And I want to use ist for a "quite" independent "Power-Supply". My expectations 
 
 # Disclaimer
 
-The schematic here on GitHub is just an proof of concept. It doesn't fulfill all the electrical requirements regarding safety and  established standards. This battery is a self made project and must not be created if you aren't a electrical specialist. Building the battery box is on your own risk.
+The schematic here on GitHub is just an proof of concept. It doesn't fulfill all the electrical requirements regarding safety and established standards. This battery is a self made project and must not be created if you aren't a electrical specialist. Building the battery box is on your own risk.
