@@ -1,5 +1,5 @@
 {
-  "name": "batterybox",
+  "name": "@sjuergen/batterybox",
   "version": "0.0.0",
   "description": "independent battery box",
   "main": "index.js",
