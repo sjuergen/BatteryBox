@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -17,9 +17,9 @@ Text HLabel 1050 1400 0    50   Input ~ 0
 L_IN
 Text HLabel 1050 1700 0    50   Input ~ 0
 N_IN
-Text HLabel 1700 5100 1    50   Input ~ 0
+Text HLabel 1850 3750 1    50   Input ~ 0
 12V+_OUT
-Text HLabel 1550 5300 1    50   Input ~ 0
+Text HLabel 1600 3950 1    50   Input ~ 0
 0V_OUT
 $Comp
 L Device:Battery BT1
@@ -68,12 +68,12 @@ $EndComp
 $Comp
 L BatteryBox-rescue:NAC3MPA-1-WOT-NAC3MPA-1-WOT U1
 U 1 1 5F0CE699
-P 1250 5500
-F 0 "U1" H 1057 6267 50  0000 C CNN
-F 1 "NAC3MPA-1-WOT" H 1057 6176 50  0000 C CNN
-F 2 "NAC3MPA-1-WOT" H 1250 5500 50  0001 L BNN
-F 3 "" H 1250 5500 50  0001 C CNN
-	1    1250 5500
+P 1250 4150
+F 0 "U1" H 1057 4917 50  0000 C CNN
+F 1 "NAC3MPA-1-WOT" H 1057 4826 50  0000 C CNN
+F 2 "NAC3MPA-1-WOT" H 1250 4150 50  0001 L BNN
+F 3 "" H 1250 4150 50  0001 C CNN
+	1    1250 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -111,11 +111,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 2800 7150 2150
 Wire Wire Line
-	6350 4250 6350 5300
-Wire Wire Line
-	6350 5300 7150 5300
-Wire Wire Line
-	7150 5300 7150 4100
+	6350 4250 6350 4900
 Wire Wire Line
 	4050 3350 4050 2650
 Wire Wire Line
@@ -128,19 +124,7 @@ Wire Wire Line
 Wire Wire Line
 	4800 2050 5350 2050
 Wire Wire Line
-	5350 2050 5350 5300
-Wire Wire Line
-	5350 5300 6350 5300
-Connection ~ 6350 5300
-Connection ~ 5350 5300
-Wire Wire Line
-	1450 5300 5350 5300
-Wire Wire Line
-	2300 3750 3500 3750
-Wire Wire Line
-	1450 5100 2300 5100
-Wire Wire Line
-	2300 5100 2300 3750
+	5350 2050 5350 5000
 Text HLabel 1050 2000 0    50   Input ~ 0
 PE
 Wire Wire Line
@@ -153,23 +137,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_WallSocket J1
 U 1 1 5F0DCF32
-P 2150 6700
-F 0 "J1" H 2106 7025 50  0000 C CNN
-F 1 "Conn_WallSocket" H 2106 6934 50  0000 C CNN
-F 2 "" H 1750 6700 50  0001 C CNN
-F 3 "~" H 1750 6700 50  0001 C CNN
-	1    2150 6700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_WallSocket J2
-U 1 1 5F0DDC3E
-P 3300 6700
-F 0 "J2" H 3256 7025 50  0000 C CNN
-F 1 "Conn_WallSocket" H 3256 6934 50  0000 C CNN
-F 2 "" H 2900 6700 50  0001 C CNN
-F 3 "~" H 2900 6700 50  0001 C CNN
-	1    3300 6700
+P 3450 6700
+F 0 "J1" H 3406 7025 50  0000 C CNN
+F 1 "Conn_WallSocket" H 3406 6934 50  0000 C CNN
+F 2 "" H 3050 6700 50  0001 C CNN
+F 3 "~" H 3050 6700 50  0001 C CNN
+	1    3450 6700
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -195,55 +168,97 @@ F 3 "~" V 4450 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 3950 3100 3950
+	3500 3950 3050 3950
 Wire Wire Line
-	3100 3950 3100 5800
+	3050 3950 3050 5800
 Wire Wire Line
-	3100 5800 5400 5800
+	3050 5800 5400 5800
 Wire Wire Line
 	5400 5800 5400 6100
 Wire Wire Line
-	6350 7350 6350 5300
+	3650 7300 3650 6800
 Wire Wire Line
-	2350 7350 2350 6800
+	4450 6850 4450 7300
+Connection ~ 4450 7300
 Wire Wire Line
-	3500 6800 3500 7350
-Connection ~ 3500 7350
-Wire Wire Line
-	3500 7350 2350 7350
-Wire Wire Line
-	4450 6850 4450 7350
-Connection ~ 4450 7350
-Wire Wire Line
-	4450 7350 3500 7350
-Wire Wire Line
-	4450 7350 6350 7350
+	4450 7300 6350 7300
 Wire Wire Line
 	5100 6850 5100 6100
 Wire Wire Line
 	5100 6100 4450 6100
 Wire Wire Line
-	2350 6100 2350 6600
-Wire Wire Line
-	3500 6600 3500 6100
-Connection ~ 3500 6100
-Wire Wire Line
-	3500 6100 2350 6100
+	3650 6100 3650 6600
 Wire Wire Line
 	4450 6450 4450 6100
 Connection ~ 4450 6100
-Wire Wire Line
-	4450 6100 3500 6100
 Wire Wire Line
 	5400 6500 5400 6850
 Wire Wire Line
 	5400 6850 5100 6850
 Wire Notes Line
-	1700 5950 6050 5950
+	3050 5950 6050 5950
 Wire Notes Line
 	6050 5950 6050 7550
 Wire Notes Line
-	6050 7550 1700 7550
+	7350 7550 3000 7550
 Wire Notes Line
-	1700 7550 1700 5950
+	3050 7550 3050 5950
+$Comp
+L MyParts:Terminal16 X?
+U 1 1 5F416C33
+P 8600 5250
+F 0 "X?" V 7745 5250 50  0000 C CNN
+F 1 "Terminal16" V 7836 5250 50  0000 C CNN
+F 2 "MyParts:GroundTerminal" V 7927 5250 50  0000 C CNN
+F 3 "" H 8650 5300 50  0001 C CNN
+	1    8600 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 4800 7150 4800
+Wire Wire Line
+	7150 4800 7150 4100
+Wire Wire Line
+	8150 4900 6350 4900
+Wire Wire Line
+	8150 5400 6350 5400
+Wire Wire Line
+	6350 5400 6350 7300
+Wire Wire Line
+	8150 5000 5350 5000
+Wire Wire Line
+	3650 6100 4450 6100
+Wire Wire Line
+	3650 7300 4450 7300
+$Comp
+L Connector:Conn_WallSocket J?
+U 1 1 5F420731
+P 1150 6650
+F 0 "J?" H 1106 6975 50  0000 C CNN
+F 1 "Conn_WallSocket" H 1106 6884 50  0000 C CNN
+F 2 "" H 750 6650 50  0001 C CNN
+F 3 "~" H 750 6650 50  0001 C CNN
+	1    1150 6650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4150 2250 4150
+Wire Wire Line
+	2250 4150 2250 6550
+Wire Wire Line
+	2250 6550 1350 6550
+Wire Wire Line
+	1350 6750 2500 6750
+Wire Wire Line
+	2500 6750 2500 5300
+Wire Wire Line
+	1450 3750 3500 3750
+Wire Wire Line
+	8150 5300 2500 5300
+Wire Wire Line
+	8150 5100 2000 5100
+Wire Wire Line
+	2000 5100 2000 3950
+Wire Wire Line
+	2000 3950 1450 3950
 $EndSCHEMATC

@@ -80,11 +80,11 @@ Connection ~ 3800 3750
 Wire Wire Line
 	5500 5100 5500 5450
 Wire Wire Line
-	5500 5450 6100 5450
+	5500 5450 5800 5450
 Wire Wire Line
-	6100 5450 6100 1000
+	5800 5450 5800 1000
 Wire Wire Line
-	6100 1000 9750 1000
+	5800 1000 9750 1000
 Text HLabel 1500 1000 0    50   Input ~ 0
 12V_In_SecBattery
 Text HLabel 1500 1200 0    50   Input ~ 0
@@ -95,14 +95,8 @@ Wire Wire Line
 	5400 1000 5400 4500
 Wire Wire Line
 	3700 5050 3700 5650
-Connection ~ 3300 6000
 Wire Wire Line
-	3300 5050 3300 6000
-Wire Wire Line
-	5100 5100 5100 6000
-Connection ~ 5100 6000
-Wire Wire Line
-	5100 6000 3300 6000
+	5100 5100 5100 5850
 Text HLabel 1900 2200 1    50   Input ~ 0
 230V_L
 Text HLabel 1700 2400 1    50   Input ~ 0
@@ -146,15 +140,6 @@ Wire Wire Line
 	3700 5650 6150 5650
 Wire Wire Line
 	7150 5650 7200 5650
-Wire Wire Line
-	5100 6000 6150 6000
-Wire Wire Line
-	1500 1200 1750 1200
-Wire Wire Line
-	1750 1200 1750 3400
-Connection ~ 1750 1200
-Wire Wire Line
-	1750 1200 9750 1200
 Wire Wire Line
 	7150 6050 7600 6050
 $Sheet
@@ -208,14 +193,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 3550 7850 3550
 Wire Wire Line
-	1750 6000 3300 6000
-Wire Wire Line
 	1450 3400 1750 3400
-Connection ~ 1750 3400
-Wire Wire Line
-	1750 3400 1750 6000
-Wire Wire Line
-	1750 3400 2550 3400
 Wire Wire Line
 	7200 3150 7200 5650
 Wire Wire Line
@@ -271,4 +249,57 @@ Wire Wire Line
 	9650 2000 9750 2000
 Wire Wire Line
 	9100 2600 9650 2600
+$Comp
+L MyParts:Terminal16 X2
+U 1 1 5F2891BD
+P 4350 6850
+F 0 "X2" H 4778 6941 50  0000 L CNN
+F 1 "Terminal16" H 4778 6850 50  0000 L CNN
+F 2 "MyParts:GroundTerminal" H 4778 6759 50  0000 L CNN
+F 3 "" H 4400 6900 50  0001 C CNN
+	1    4350 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 7600 3900 7600
+Wire Wire Line
+	3900 7600 3900 7300
+Wire Wire Line
+	3300 5850 4400 5850
+Wire Wire Line
+	1750 3400 1750 7600
+Wire Wire Line
+	3300 5050 3300 5850
+Wire Wire Line
+	5100 5850 4500 5850
+Wire Wire Line
+	6150 6000 4600 6000
+Wire Wire Line
+	1500 1200 2100 1200
+Wire Wire Line
+	2100 1200 2100 7450
+Wire Wire Line
+	2100 7450 4000 7450
+Wire Wire Line
+	4000 7450 4000 7300
+Wire Wire Line
+	2550 3400 2550 6200
+Wire Wire Line
+	2550 6200 3900 6200
+Wire Wire Line
+	4600 6000 4600 6400
+Wire Wire Line
+	4500 5850 4500 6400
+Wire Wire Line
+	4400 5850 4400 6400
+Wire Wire Line
+	3900 6200 3900 6400
+Wire Wire Line
+	4600 7300 4600 7550
+Wire Wire Line
+	4600 7550 6050 7550
+Wire Wire Line
+	6050 7550 6050 1200
+Wire Wire Line
+	6050 1200 9750 1200
 $EndSCHEMATC

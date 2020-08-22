@@ -148,4 +148,36 @@ Text HLabel 10550 2450 2    50   Input ~ 0
 230V_N_OutS
 Text HLabel 10550 2650 2    50   Input ~ 0
 230V_PE_OutS
+Wire Notes Line
+	1550 950  1550 1550
+Wire Notes Line
+	1550 1550 1650 1550
+Wire Notes Line
+	1650 1550 1650 950 
+Wire Notes Line
+	1650 950  1550 950 
+Wire Notes Line
+	1550 1950 1550 2550
+Wire Notes Line
+	1550 2550 1650 2550
+Wire Notes Line
+	1650 2550 1650 1950
+Wire Notes Line
+	1650 1950 1550 1950
+Wire Notes Line
+	10200 950  10300 950 
+Wire Notes Line
+	10300 950  10300 1550
+Wire Notes Line
+	10300 1550 10200 1550
+Wire Notes Line
+	10200 1550 10200 950 
+Wire Notes Line
+	10200 2150 10200 2750
+Wire Notes Line
+	10200 2750 10300 2750
+Wire Notes Line
+	10300 2750 10300 2150
+Wire Notes Line
+	10300 2150 10200 2150
 $EndSCHEMATC
