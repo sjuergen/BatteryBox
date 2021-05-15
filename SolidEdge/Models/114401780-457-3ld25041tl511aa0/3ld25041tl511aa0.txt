@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-29032019-044318";"";
+"REFERENCE";"3LD25041TL511AA0";"";
+"TraceParts.PartTitle";"Lasttrennschalter";"";
+"TraceParts.InstanceId";"90-29032019-044318DHS313KZ9AF6S0HR5P87UXUDR";"";
+"DESIGN";"Lasttrennschalter 3LD, Hauptschalter, 4-polig, Iu: 63 A, Betriebsleistung / ...";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"SIEMENS";"";
+"TraceParts.PartVersion";"1.0.0";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"de";"";
+"TraceParts.ClassPath";"SIEMENS_AUTOMATION:90-29032019-044318";"";

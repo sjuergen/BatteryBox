@@ -302,4 +302,8 @@ Wire Wire Line
 	6050 7550 6050 1200
 Wire Wire Line
 	6050 1200 9750 1200
+Text Notes 2900 4450 0    50   ~ 0
+Inverter
+Text Notes 4650 4400 0    50   ~ 0
+CoolerBox 1./2. Battery
 $EndSCHEMATC

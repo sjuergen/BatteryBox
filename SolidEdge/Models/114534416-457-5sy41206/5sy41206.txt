@@ -1,0 +1,16 @@
+﻿"Symbol";"Value";"Unit";
+"SUPPLIER_NAME";"RS Components";"";
+"TraceParts.PartVersion";"1.0.9";"";
+"SUPPLIER";"Siemens";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartNumber";"10-10042012-096884";"";
+"TraceParts.PartLanguage";"de";"";
+"DESIGN";"Siemens Sentron 5SY4 Sicherungsautomat, Leitungsschutzschalter Typ B, 1-polig 20 A, Abschaltvermögen 10 kA";"";
+"TraceParts.InstanceId";"10-10042012-0968845OON168FR74B3P3WDSQ16WCDY";"";
+"TraceParts.PartTitle";"Siemens Sentron 5SY4 Sicherungsautomat, Leitungsschutzschalter Typ B, 1-polig 20 A, Abschaltvermögen 10 kA";"";
+"REFERENCE";"5SY41206";"";
+"Buy_Now";"https://uk.rs-online.com/web/p/products/3831992?cm_mmc=en-ds-_-mcad-_-traceparts-_-3831992'";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"rs_stock_number";"3831992";"";
+"TraceParts.ClassPath";"RS_COMPONENTS:10-10042012-096884";"";

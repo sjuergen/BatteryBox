@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-29032019-049136";"";
+"REFERENCE";"5SV33146BA";"";
+"TraceParts.PartTitle";"Fehlerstrom-Schutzschalter";"";
+"TraceParts.InstanceId";"90-29032019-0491365FIGQL38BQW2319PF8U8P9UVC";"";
+"DESIGN";"FI-Schutzschalter";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"SIEMENS";"";
+"TraceParts.PartVersion";"1.0.0";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"de";"";
+"TraceParts.ClassPath";"SIEMENS_AUTOMATION:90-29032019-049136";"";

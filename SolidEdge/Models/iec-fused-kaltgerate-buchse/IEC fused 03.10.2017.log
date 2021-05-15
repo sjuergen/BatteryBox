@@ -1,0 +1,41 @@
+STEP in Solid Edge konvertieren
+Datum: Montag,Mai 10,2021 08:37
+Quelldatei: D:\Git\Privat\Projekte\3DModels\iec-fused-kaltgerate-buchse\IEC fused 03.10.2017.stp
+Autor: Unbekannt
+Organisation: Unbekannt
+Ausgangssystem: Unbekannt
+
+Hardware:
+Prozessor: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz
+Betriebssystem: Windows 10 Enterprise Edition
+Installierter Speicher: 63.81 GB
+
+Software-Informationen
+Parasolid-Version: 31.1.255
+PSBodyShop-Version: 31.1.110
+Step-Adapterversion: 5.0.48
+Solid Edge-Version: 220.00.00.104 x64
+
+Step-Importoptionen
+Facettierte Körper importieren: Ein
+Prüfkörper importieren: Aus
+Kurven importieren: Ein
+DoNotSave importieren: Ein
+Mehrere Körper als Einzelteildatei importieren: Ein
+Flächenvernähung importieren: Ein
+Boolesche Körper importieren: Ein
+Basisformelement erstellen: Ein
+Geometrie vereinfachen: Ein
+Druckkurven importieren: Ein
+Führung importieren: C:
+Flächenvernähung importieren: Ein
+Flächen importieren: Ein
+Ausgabepfad importieren: D:\Git\Privat\Projekte\3DModels\iec-fused-kaltgerate-buchse
+Aktivieren des standardmäßigen Ausgabepfads importieren: Ein
+PMI importieren: Aus
+Pfad importieren: 
+
+Übersetzen in Parasolid-Datentypen...
+D:\Git\Privat\Projekte\3DModels\iec-fused-kaltgerate-buchse\Document.par wird platziert
+Konvertierungsvorgang ist abgeschlossen
+Zur Übersetzung und Nachbearbeitung erforderte Gesamtzeit:00 : 00 : 15

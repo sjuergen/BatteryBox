@@ -1,0 +1,49 @@
+STEP in Solid Edge konvertieren
+Datum: Montag,Mai 10,2021 08:44
+Quelldatei: D:\Git\Privat\Projekte\3DModels\usb-car-charger-dc-converter-12-5-v-1\USB car charger, dc converter 12-5 V.STEP
+Autor: Unbekannt
+Organisation: Unbekannt
+Ausgangssystem: SolidWorks 2016
+
+Hardware:
+Prozessor: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz
+Betriebssystem: Windows 10 Enterprise Edition
+Installierter Speicher: 63.81 GB
+
+Software-Informationen
+Parasolid-Version: 31.1.255
+PSBodyShop-Version: 31.1.110
+Step-Adapterversion: 5.0.48
+Solid Edge-Version: 220.00.00.104 x64
+
+Step-Importoptionen
+Facettierte Körper importieren: Ein
+Prüfkörper importieren: Aus
+Kurven importieren: Ein
+DoNotSave importieren: Ein
+Mehrere Körper als Einzelteildatei importieren: Ein
+Flächenvernähung importieren: Ein
+Boolesche Körper importieren: Ein
+Basisformelement erstellen: Ein
+Geometrie vereinfachen: Ein
+Druckkurven importieren: Ein
+Führung importieren: C:
+Flächenvernähung importieren: Ein
+Flächen importieren: Ein
+Ausgabepfad importieren: D:\Git\Privat\Projekte\3DModels\usb-car-charger-dc-converter-12-5-v-1
+Aktivieren des standardmäßigen Ausgabepfads importieren: Ein
+PMI importieren: Aus
+Pfad importieren: 
+
+Übersetzen in Parasolid-Datentypen...
++Baugruppe 1 beginnen
++SE Assembly-Datei D:\Git\Privat\Projekte\3DModels\usb-car-charger-dc-converter-12-5-v-1\USB car charger, dc converter 12-5 V.asm wurde erstellt
+|--+SE Part-Datei D:\Git\Privat\Projekte\3DModels\usb-car-charger-dc-converter-12-5-v-1\USB car charger.par wurde erstellt
+|--+SE Part-Datei D:\Git\Privat\Projekte\3DModels\usb-car-charger-dc-converter-12-5-v-1\Car charging nut.par wurde erstellt
++Gesamtzahl der Teile: 4
++Baugruppen: 0
++Volumenkörper: 4
++Flächenkörper: 0
++Baugruppe 1 beenden
+Konvertierungsvorgang ist abgeschlossen
+Zur Übersetzung und Nachbearbeitung erforderte Gesamtzeit:00 : 00 : 01
