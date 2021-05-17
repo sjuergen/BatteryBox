@@ -95,30 +95,14 @@ F 3 "~" H 7150 2000 50  0001 C CNN
 	1    7150 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L MyParts:Pulser U4
-U 1 1 5F0D362B
-P 6450 3650
-F 0 "U4" V 6404 3728 50  0000 L CNN
-F 1 "Pulser" V 6495 3728 50  0000 L CNN
-F 2 "" H 6450 3650 50  0001 C CNN
-F 3 "" H 6450 3650 50  0001 C CNN
-	1    6450 3650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7150 3700 7150 3200
 Wire Wire Line
 	7150 2800 7150 2150
 Wire Wire Line
-	6350 4250 6350 4900
-Wire Wire Line
 	4050 3350 4050 2650
 Wire Wire Line
 	4050 2650 6350 2650
-Connection ~ 6350 2650
-Wire Wire Line
-	6350 2650 6350 3050
 Wire Wire Line
 	4800 1400 6350 1400
 Wire Wire Line
@@ -218,8 +202,6 @@ Wire Wire Line
 	8150 4800 7150 4800
 Wire Wire Line
 	7150 4800 7150 4100
-Wire Wire Line
-	8150 4900 6350 4900
 Wire Wire Line
 	8150 5400 6350 5400
 Wire Wire Line
