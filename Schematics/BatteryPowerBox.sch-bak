@@ -35,12 +35,12 @@ $EndComp
 $Comp
 L Switch:SW_DPST_x2 SW1
 U 2 1 5F0CB6B3
-P 7150 3000
-F 0 "SW1" V 7196 2912 50  0000 R CNN
-F 1 "SW_DPST_x2" V 7105 2912 50  0000 R CNN
-F 2 "" H 7150 3000 50  0001 C CNN
-F 3 "~" H 7150 3000 50  0001 C CNN
-	2    7150 3000
+P 7150 2000
+F 0 "SW1" V 7196 1912 50  0000 R CNN
+F 1 "SW_DPST_x2" V 7105 1912 50  0000 R CNN
+F 2 "" H 7150 2000 50  0001 C CNN
+F 3 "~" H 7150 2000 50  0001 C CNN
+	2    7150 2000
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -84,27 +84,10 @@ Wire Wire Line
 	2900 1700 2900 2050
 Wire Wire Line
 	2900 2050 3400 2050
-$Comp
-L Device:Fuse F1
-U 1 1 5F0D0D8A
-P 7150 2000
-F 0 "F1" H 7210 2046 50  0000 L CNN
-F 1 "Fuse" H 7210 1955 50  0000 L CNN
-F 2 "" V 7080 2000 50  0001 C CNN
-F 3 "~" H 7150 2000 50  0001 C CNN
-	1    7150 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 3700 7150 3200
-Wire Wire Line
-	7150 2800 7150 2150
 Wire Wire Line
 	4050 3350 4050 2650
 Wire Wire Line
 	4050 2650 6350 2650
-Wire Wire Line
-	4800 1400 6350 1400
 Wire Wire Line
 	4800 2050 5350 2050
 Wire Wire Line
@@ -112,10 +95,7 @@ Wire Wire Line
 Text HLabel 1050 2000 0    50   Input ~ 0
 PE
 Wire Wire Line
-	7150 1400 7150 1850
-Wire Wire Line
 	6350 1400 6350 2650
-Connection ~ 6350 1400
 Wire Wire Line
 	6350 1400 7150 1400
 $Comp
@@ -243,4 +223,33 @@ Wire Wire Line
 	2000 5100 2000 3950
 Wire Wire Line
 	2000 3950 1450 3950
+Wire Wire Line
+	7150 1400 7150 1800
+Wire Wire Line
+	7150 2800 7150 2200
+$Comp
+L Device:Fuse F1
+U 1 1 5F0D0D8A
+P 7150 2950
+F 0 "F1" H 7210 2996 50  0000 L CNN
+F 1 "Fuse" H 7210 2905 50  0000 L CNN
+F 2 "" V 7080 2950 50  0001 C CNN
+F 3 "~" H 7150 2950 50  0001 C CNN
+	1    7150 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7150 2200
+Wire Wire Line
+	7150 2200 7150 2150
+Connection ~ 7150 1800
+Wire Wire Line
+	7150 1800 7150 1850
+Wire Wire Line
+	7150 3100 7150 3700
+Wire Wire Line
+	4600 3750 5000 3750
+Wire Wire Line
+	5000 3750 5000 1400
+Wire Wire Line
+	5000 1400 4800 1400
 $EndSCHEMATC

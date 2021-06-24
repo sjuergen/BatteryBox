@@ -62,4 +62,10 @@ Wire Wire Line
 	1800 1350 2600 1350
 Wire Wire Line
 	1800 1500 2600 1500
+$Sheet
+S 4000 4350 2150 1600
+U 60AB0555
+F0 "Sheet60AB0554" 50
+F1 "12V_PowerSelection.sch" 50
+$EndSheet
 $EndSCHEMATC

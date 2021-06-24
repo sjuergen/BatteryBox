@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -62,4 +62,10 @@ Wire Wire Line
 	1800 1350 2600 1350
 Wire Wire Line
 	1800 1500 2600 1500
+$Sheet
+S 4000 4350 2150 1600
+U 60AB0555
+F0 "Sheet60AB0554" 50
+F1 "12V_PowerSelection.sch" 50
+$EndSheet
 $EndSCHEMATC
