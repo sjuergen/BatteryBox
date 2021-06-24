@@ -1,0 +1,179 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 9450 4500 2    50   Input ~ 0
+0V_Charger
+Text HLabel 2300 2250 1    50   Input ~ 0
+12V+_OUT
+Text HLabel 2100 2450 1    50   Input ~ 0
+0V_OUT
+$Comp
+L Device:Battery BT?
+U 1 1 60D92067
+P 7550 3600
+AR Path="/5F0C81D9/60D92067" Ref="BT?"  Part="1" 
+AR Path="/60D529AB/60D84F6F/60D92067" Ref="BT?"  Part="1" 
+F 0 "BT?" H 7658 3646 50  0000 L CNN
+F 1 "Battery" H 7658 3555 50  0000 L CNN
+F 2 "" V 7550 3660 50  0001 C CNN
+F 3 "~" V 7550 3660 50  0001 C CNN
+	1    7550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW?
+U 2 1 60D9206D
+P 7550 1700
+AR Path="/5F0C81D9/60D9206D" Ref="SW?"  Part="2" 
+AR Path="/60D529AB/60D84F6F/60D9206D" Ref="SW?"  Part="2" 
+F 0 "SW?" V 7596 1612 50  0000 R CNN
+F 1 "SW_DPST_x2" V 7505 1612 50  0000 R CNN
+F 2 "" H 7550 1700 50  0001 C CNN
+F 3 "~" H 7550 1700 50  0001 C CNN
+	2    7550 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MyParts:F_Distributor U?
+U 1 1 60D92073
+P 4450 2050
+AR Path="/5F0C81D9/60D92073" Ref="U?"  Part="1" 
+AR Path="/60D529AB/60D84F6F/60D92073" Ref="U?"  Part="1" 
+F 0 "U?" H 4450 1227 50  0000 C CNN
+F 1 "F_Distributor" H 4450 1136 50  0000 C CNN
+F 2 "" H 4450 2050 50  0001 C CNN
+F 3 "" H 4450 2050 50  0001 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L BatteryBox-rescue:NAC3MPA-1-WOT-NAC3MPA-1-WOT U?
+U 1 1 60D9207F
+P 1600 2650
+AR Path="/5F0C81D9/60D9207F" Ref="U?"  Part="1" 
+AR Path="/60D529AB/60D84F6F/60D9207F" Ref="U?"  Part="1" 
+F 0 "U?" H 1407 3417 50  0000 C CNN
+F 1 "NAC3MPA-1-WOT" H 1407 3326 50  0000 C CNN
+F 2 "NAC3MPA-1-WOT" H 1600 2650 50  0001 L BNN
+F 3 "" H 1600 2650 50  0001 C CNN
+	1    1600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1850 4450 1100
+$Comp
+L MyParts:Terminal16 X?
+U 1 1 60D920B5
+P 9000 4950
+AR Path="/5F0C81D9/60D920B5" Ref="X?"  Part="1" 
+AR Path="/60D529AB/60D84F6F/60D920B5" Ref="X?"  Part="1" 
+F 0 "X?" V 8145 4950 50  0000 C CNN
+F 1 "Terminal16" V 8236 4950 50  0000 C CNN
+F 2 "MyParts:GroundTerminal" V 8327 4950 50  0000 C CNN
+F 3 "" H 9050 5000 50  0001 C CNN
+	1    9000 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 4500 7550 4500
+Wire Wire Line
+	7550 4500 7550 3800
+Wire Wire Line
+	1800 2250 3900 2250
+Wire Wire Line
+	8550 4800 3300 4800
+Wire Wire Line
+	3300 4800 3300 2450
+Wire Wire Line
+	3300 2450 1800 2450
+Wire Wire Line
+	7550 1100 7550 1500
+Wire Wire Line
+	7550 2500 7550 1900
+$Comp
+L Device:Fuse F?
+U 1 1 60D920D4
+P 7550 2650
+AR Path="/5F0C81D9/60D920D4" Ref="F?"  Part="1" 
+AR Path="/60D529AB/60D84F6F/60D920D4" Ref="F?"  Part="1" 
+F 0 "F?" H 7610 2696 50  0000 L CNN
+F 1 "Fuse" H 7610 2605 50  0000 L CNN
+F 2 "" V 7480 2650 50  0001 C CNN
+F 3 "~" H 7550 2650 50  0001 C CNN
+	1    7550 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7550 1900
+Wire Wire Line
+	7550 1900 7550 1850
+Connection ~ 7550 1500
+Wire Wire Line
+	7550 1500 7550 1550
+Wire Wire Line
+	7550 2800 7550 3400
+Text HLabel 5000 2250 2    50   Input ~ 0
+12V_Charger
+Wire Notes Line
+	7100 3250 8200 3250
+Wire Notes Line
+	8200 3250 8200 4100
+Wire Notes Line
+	8200 4100 7100 4100
+Wire Notes Line
+	7100 4100 7100 3250
+Text Notes 7300 3400 0    50   ~ 0
+12V 55Ah LiPoFe
+$Comp
+L BatteryBox-rescue:NAC3MPA-1-WOT-NAC3MPA-1-WOT U?
+U 1 1 60D9D9F2
+P 1600 6050
+AR Path="/5F0C81D9/60D9D9F2" Ref="U?"  Part="1" 
+AR Path="/60D529AB/60D84F6F/60D9D9F2" Ref="U?"  Part="1" 
+F 0 "U?" H 1407 6817 50  0000 C CNN
+F 1 "NAC3MPA-1-WOT" H 1407 6726 50  0000 C CNN
+F 2 "NAC3MPA-1-WOT" H 1600 6050 50  0001 L BNN
+F 3 "" H 1600 6050 50  0001 C CNN
+	1    1600 6050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3450 5650 5450 5600
+Wire Notes Line
+	5450 5600 5500 7000
+Wire Notes Line
+	5500 7000 3500 7000
+Wire Notes Line
+	3500 7000 3500 5650
+Wire Notes Line
+	3500 5650 4050 5400
+Wire Wire Line
+	5100 6000 4700 6000
+Wire Wire Line
+	5000 6300 8550 4900
+Wire Wire Line
+	1800 5650 3500 5850
+Wire Wire Line
+	1800 5850 3500 6100
+Wire Wire Line
+	4450 1100 7550 1100
+Wire Wire Line
+	4700 6000 3750 5150
+Wire Wire Line
+	3750 5150 3750 2450
+Wire Wire Line
+	3750 2450 3900 2450
+Text HLabel 5000 2450 2    50   Input ~ 0
+12V_Panel
+$EndSCHEMATC

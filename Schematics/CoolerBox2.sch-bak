@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -306,4 +306,15 @@ Text Notes 2900 4450 0    50   ~ 0
 Inverter
 Text Notes 4650 4400 0    50   ~ 0
 CoolerBox 1./2. Battery
+$Comp
+L MyParts:JD2912-1Z-12VDC_40A K?
+U 1 1 60AB0B75
+P 2650 -350
+F 0 "K?" H 3080 -304 50  0000 L CNN
+F 1 "JD2912-1Z-12VDC_40A" H 3080 -395 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3100 -400 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 2650 -350 50  0001 C CNN
+	1    2650 -350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

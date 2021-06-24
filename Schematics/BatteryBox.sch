@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -63,9 +63,11 @@ Wire Wire Line
 Wire Wire Line
 	1800 1500 2600 1500
 $Sheet
-S 4000 4350 2150 1600
-U 60AB0555
-F0 "Sheet60AB0554" 50
-F1 "12V_PowerSelection.sch" 50
+S 2600 4050 2200 2850
+U 60D529AB
+F0 "EuroPowerBox" 50
+F1 "EuroPowerBox.sch" 50
 $EndSheet
+Text HLabel 2600 4400 0    50   Input ~ 0
+12V_In_Main
 $EndSCHEMATC
