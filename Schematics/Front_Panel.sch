@@ -52,21 +52,21 @@ F 3 "~" V 3450 2750 50  0001 C CNN
 	1    3450 2650
 	1    0    0    -1  
 $EndComp
-Connection ~ 3450 4100
-Text HLabel 1000 1100 0    50   Input ~ 0
-12V_In
-Text HLabel 1050 4100 0    50   Input ~ 0
-0V
+Connection ~ 3450 3650
+Text HLabel 1350 1100 0    50   Input ~ 0
+12V_In_FrontPanel
+Text HLabel 1400 3650 0    50   Input ~ 0
+0V_FrontPanel
 Wire Wire Line
-	1050 4100 3450 4100
+	1400 3650 3450 3650
 Wire Wire Line
-	1000 1100 1650 1100
+	1350 1100 1650 1100
 Wire Wire Line
 	2050 1100 3450 1100
 Wire Wire Line
 	3450 1100 3450 2150
 Wire Wire Line
-	5900 2750 5900 4100
+	5900 2750 5900 3650
 Wire Wire Line
 	5900 1100 5900 2550
 Connection ~ 3450 1100
@@ -86,7 +86,7 @@ $EndComp
 Wire Wire Line
 	3450 1100 5900 1100
 Wire Wire Line
-	3450 4100 5900 4100
+	3450 3650 5900 3650
 Wire Wire Line
 	3450 2150 4250 2150
 Wire Wire Line
@@ -101,7 +101,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 2850 3450 3050
 Wire Wire Line
-	3450 3050 3450 4100
+	3450 3050 3450 3650
 Connection ~ 3450 3050
 Wire Notes Line
 	3150 1850 4850 1850

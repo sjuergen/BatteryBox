@@ -39,11 +39,11 @@ F 3 "~" H 3500 1600 50  0001 C CNN
 	1    3500 1600
 	0    1    1    0   
 $EndComp
-Text HLabel 1250 1600 0    50   Input ~ 0
+Text HLabel 2050 1600 1    50   Input ~ 0
 230V_L
-Text HLabel 1250 1800 0    50   Input ~ 0
+Text HLabel 2200 1800 1    50   Input ~ 0
 230V_N
-Text HLabel 1250 2000 0    50   Input ~ 0
+Text HLabel 1800 2000 1    50   Input ~ 0
 230V_PE
 Text HLabel 1100 2600 0    50   Input ~ 0
 12V_Inverter
@@ -184,14 +184,25 @@ Text HLabel 10300 4900 2    50   Input ~ 0
 $Comp
 L Connector:Conn_WallPlug_Earth P?
 U 1 1 60D98E1B
-P 10400 2900
+P 950 1700
 AR Path="/5F0EC429/60D98E1B" Ref="P?"  Part="1" 
 AR Path="/60D529AB/60D52DA7/60D98E1B" Ref="P1"  Part="1" 
-F 0 "P1" H 10467 3225 50  0000 C CNN
-F 1 "Conn_WallPlug_Earth" H 10467 3134 50  0000 C CNN
-F 2 "" H 10800 2900 50  0001 C CNN
-F 3 "~" H 10800 2900 50  0001 C CNN
-	1    10400 2900
-	-1   0    0    -1  
+F 0 "P1" H 1017 2025 50  0000 C CNN
+F 1 "Conn_WallPlug_Earth" H 1017 1934 50  0000 C CNN
+F 2 "" H 1350 1700 50  0001 C CNN
+F 3 "~" H 1350 1700 50  0001 C CNN
+	1    950  1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_WallSocket_Earth J?
+U 1 1 60D89740
+P 10300 3000
+F 0 "J?" H 10554 3011 50  0000 L CNN
+F 1 "Conn_WallSocket_Earth" H 10554 2920 50  0000 L CNN
+F 2 "" H 10000 3100 50  0001 C CNN
+F 3 "~" H 10000 3100 50  0001 C CNN
+	1    10300 3000
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
