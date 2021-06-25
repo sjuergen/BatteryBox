@@ -108,7 +108,7 @@ Wire Wire Line
 	2400 3200 2750 3200
 Text HLabel 2050 1550 3    50   Input ~ 0
 12V_D+
-Text HLabel 9400 5550 0    50   Input ~ 0
+Text HLabel 9400 5350 0    50   Input ~ 0
 0V_Cooler
 Wire Notes Line
 	8850 4600 8850 6050
