@@ -1,0 +1,114 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1050 1850 1500 1700
+U 60D52DA7
+F0 "Sheet60D52DA6" 50
+F1 "230V_Supply.sch" 50
+F2 "230V_L" I L 1050 2100 50 
+F3 "230V_N" I L 1050 2300 50 
+F4 "230V_PE" I L 1050 2500 50 
+F5 "12V_Inverter" I R 2550 2750 50 
+F6 "0V_Inverter" I R 2550 3000 50 
+F7 "12V_OutCharger" I R 2550 2050 50 
+F8 "0V_Out_Charger" I R 2550 2250 50 
+$EndSheet
+$Sheet
+S 4450 1700 1550 1700
+U 60D52DDD
+F0 "12V_PowerSelector" 50
+F1 "12V_PowerSelector.sch" 50
+F2 "12V_In_MainBattery" I L 4450 2000 50 
+F3 "12V_In_SecBattery" I L 4450 3050 50 
+F4 "0V_Relais" I R 6000 2350 50 
+F5 "12V_D+" I L 4450 2200 50 
+F6 "0V_Cooler" I R 6000 2550 50 
+F7 "0V_Main_Battery" I L 4450 2400 50 
+F8 "12V_Inverter" I L 4450 2750 50 
+$EndSheet
+$Sheet
+S 8350 1800 1550 1700
+U 60D52E4F
+F0 "Front_Panel" 50
+F1 "Front_Panel.sch" 50
+F2 "12V_In_FrontPanel" I L 8350 2100 50 
+F3 "0V_FrontPanel" I L 8350 2300 50 
+$EndSheet
+$Sheet
+S 4450 4100 1550 1250
+U 60D84F6F
+F0 "12V_PowerSupply" 50
+F1 "12_PowerSupply.sch" 50
+F2 "0V_Charger" I L 4450 4500 50 
+F3 "12V_Panel" I R 6000 4250 50 
+F4 "0V_Inverter" I L 4450 4900 50 
+F5 "0V_Relais" I R 6000 4900 50 
+F6 "0V_Cooler" I R 6000 4700 50 
+F7 "12V_Charger_In" I L 4450 4300 50 
+F8 "12V_PowerSelector" I L 4450 5150 50 
+F9 "0V_Panel" I R 6000 4400 50 
+$EndSheet
+Wire Wire Line
+	2550 2050 3700 2050
+Wire Wire Line
+	3700 2050 3700 4300
+Wire Wire Line
+	3700 4300 4450 4300
+Wire Wire Line
+	2550 2250 3500 2250
+Wire Wire Line
+	3500 2250 3500 4500
+Wire Wire Line
+	3500 4500 4450 4500
+Wire Wire Line
+	2550 3000 3000 3000
+Wire Wire Line
+	3000 3000 3000 4900
+Wire Wire Line
+	3000 4900 4450 4900
+Wire Wire Line
+	6000 2350 6650 2350
+Wire Wire Line
+	6650 2350 6650 4900
+Wire Wire Line
+	6650 4900 6000 4900
+Wire Wire Line
+	6000 4700 6450 4700
+Wire Wire Line
+	6450 4700 6450 2550
+Wire Wire Line
+	6450 2550 6000 2550
+Wire Wire Line
+	2550 2750 4450 2750
+Wire Wire Line
+	4450 3050 4000 3050
+Wire Wire Line
+	4000 3050 4000 5150
+Wire Wire Line
+	4000 5150 4450 5150
+Wire Wire Line
+	6000 4250 7450 4250
+Wire Wire Line
+	7450 4250 7450 2100
+Wire Wire Line
+	7450 2100 8350 2100
+Wire Wire Line
+	6000 4400 7600 4400
+Wire Wire Line
+	7600 4400 7600 2300
+Wire Wire Line
+	7600 2300 8350 2300
+$EndSCHEMATC
